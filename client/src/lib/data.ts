@@ -8,11 +8,11 @@ export const FACEBOOK_URL = "https://www.facebook.com/p/By-Grit-Grace-6157696060
 export const LINKTREE_URL = "https://linktr.ee/bygritandgrace";
 
 export const LOGO_URL = "/manus-storage/deedee-logo-mark_b1ad0cd7.png";
-export const HERO_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/YQjocCFgsRHmxQ7x85rn3n/stage-crowd-hero-MJuB9GvapGWj2SNduRzg5A.webp";
-export const PODCAST_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/YQjocCFgsRHmxQ7x85rn3n/stage-spotlight-close-YUZpfGkfvSQfAYEjT86mFC.webp";
-export const SPEAKING_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/YQjocCFgsRHmxQ7x85rn3n/stage-backstage-glow-g7pUgpfvE7po6uuh3fcsGC.webp";
-export const MANIFESTO_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/YQjocCFgsRHmxQ7x85rn3n/audience-sea-kbCVzXkxJgJodjQrhgu8kw.webp";
-export const AUDIENCE_CROWD_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/YQjocCFgsRHmxQ7x85rn3n/audience-sea-kbCVzXkxJgJodjQrhgu8kw.webp";
+export const HERO_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-bloom-CpBdbLNKnGYQiJ8pg84cXU.webp";
+export const PODCAST_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-plum-QvDSKRtJY2jogYqKpbZsZv.webp";
+export const SPEAKING_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-floral-Uh9nrWmVDZV2E3cGxX6uNz.webp";
+export const MANIFESTO_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-plum-QvDSKRtJY2jogYqKpbZsZv.webp";
+export const AUDIENCE_CROWD_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-light-RQeGSKZrSnZQ96X97ZL85Q.webp";
 
 // Denise personal photos
 export const DENISE_JASON_URL = "/manus-storage/denise-jason_57e84c52.jpg";

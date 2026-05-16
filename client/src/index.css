@@ -4,9 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   DD Talks — Cinematic Ember Design System
-   Deep black base, warm amber/orange accents, gold highlights
-   Typography: Playfair Display (display) + DM Sans (body)
+   DD Talks — Feminine Bloom Design System
+   Palette: Deep plum darks ↔ Warm cream lights
+   Accents: Dusty rose #C084A8 · Powder blue #7EB8D4 · Soft lavender #A78BCA
+   Typography: Playfair Display (display) + DM Sans (body) + Great Vibes (calligraphy)
+   Sections alternate: dark (deep plum) ↔ light (warm cream)
    ============================================================ */
 
 @theme inline {
@@ -49,53 +51,61 @@
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0.75rem;
 
-  /* DD Talks Brand Colors */
-  --dd-black: #0a0a0a;
-  --dd-black-2: #111111;
-  --dd-black-3: #1a1a1a;
-  --dd-orange: #F97316;
-  --dd-orange-dark: #EA580C;
-  --dd-gold: #D97706;
-  --dd-gold-light: #F59E0B;
-  --dd-white: #FFFFFF;
-  --dd-warm-gray: #A8A29E;
-  --dd-warm-gray-2: #78716C;
+  /* ── DD Talks Feminine Bloom Brand Colors ── */
+  /* Darks */
+  --dd-plum:        #1A0F2E;   /* deep midnight plum — replaces harsh black */
+  --dd-plum-2:      #221540;   /* slightly lighter plum */
+  --dd-plum-3:      #2E1D52;   /* medium plum for cards */
+  /* Lights */
+  --dd-cream:       #FAF7F5;   /* warm cream white */
+  --dd-cream-2:     #F3EEF8;   /* lavender-tinted cream */
+  --dd-cream-3:     #EDE6F5;   /* soft lilac cream */
+  /* Accents */
+  --dd-rose:        #C084A8;   /* dusty rose — primary accent */
+  --dd-rose-dark:   #A8628A;   /* deeper rose for hover */
+  --dd-lavender:    #A78BCA;   /* soft lavender — secondary accent */
+  --dd-blue:        #7EB8D4;   /* powder blue — tertiary accent */
+  --dd-blush:       #E8B4D0;   /* light blush pink */
+  --dd-mauve:       #9B6B8A;   /* muted mauve for muted text */
+  /* Neutrals */
+  --dd-white:       #FFFFFF;
+  --dd-soft-gray:   #8B7D8E;   /* muted purple-gray */
 
-  /* Semantic tokens */
-  --background: oklch(0.07 0.005 60);
-  --foreground: oklch(0.97 0.005 60);
-  --card: oklch(0.10 0.006 60);
-  --card-foreground: oklch(0.97 0.005 60);
-  --popover: oklch(0.10 0.006 60);
-  --popover-foreground: oklch(0.97 0.005 60);
-  --primary: oklch(0.65 0.20 45);
-  --primary-foreground: oklch(0.07 0.005 60);
-  --secondary: oklch(0.15 0.006 60);
-  --secondary-foreground: oklch(0.85 0.005 60);
-  --muted: oklch(0.14 0.005 60);
-  --muted-foreground: oklch(0.60 0.010 60);
-  --accent: oklch(0.65 0.20 45);
-  --accent-foreground: oklch(0.07 0.005 60);
+  /* Semantic tokens — dark base (plum) */
+  --background: oklch(0.12 0.04 300);   /* deep plum */
+  --foreground: oklch(0.97 0.01 320);   /* near-white with warm tint */
+  --card: oklch(0.16 0.05 300);
+  --card-foreground: oklch(0.97 0.01 320);
+  --popover: oklch(0.16 0.05 300);
+  --popover-foreground: oklch(0.97 0.01 320);
+  --primary: oklch(0.65 0.12 330);      /* dusty rose */
+  --primary-foreground: oklch(0.12 0.04 300);
+  --secondary: oklch(0.20 0.05 300);
+  --secondary-foreground: oklch(0.85 0.02 320);
+  --muted: oklch(0.19 0.04 300);
+  --muted-foreground: oklch(0.60 0.06 320);
+  --accent: oklch(0.65 0.12 330);
+  --accent-foreground: oklch(0.12 0.04 300);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.65 0.20 45);
-  --chart-1: oklch(0.65 0.20 45);
-  --chart-2: oklch(0.55 0.18 50);
-  --chart-3: oklch(0.70 0.15 55);
-  --chart-4: oklch(0.45 0.15 40);
-  --chart-5: oklch(0.80 0.12 60);
-  --sidebar: oklch(0.10 0.006 60);
-  --sidebar-foreground: oklch(0.97 0.005 60);
-  --sidebar-primary: oklch(0.65 0.20 45);
-  --sidebar-primary-foreground: oklch(0.07 0.005 60);
-  --sidebar-accent: oklch(0.15 0.006 60);
-  --sidebar-accent-foreground: oklch(0.85 0.005 60);
+  --ring: oklch(0.65 0.12 330);
+  --chart-1: oklch(0.65 0.12 330);
+  --chart-2: oklch(0.62 0.14 280);
+  --chart-3: oklch(0.68 0.10 220);
+  --chart-4: oklch(0.55 0.10 310);
+  --chart-5: oklch(0.75 0.08 340);
+  --sidebar: oklch(0.16 0.05 300);
+  --sidebar-foreground: oklch(0.97 0.01 320);
+  --sidebar-primary: oklch(0.65 0.12 330);
+  --sidebar-primary-foreground: oklch(0.12 0.04 300);
+  --sidebar-accent: oklch(0.20 0.05 300);
+  --sidebar-accent-foreground: oklch(0.85 0.02 320);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.65 0.20 45);
+  --sidebar-ring: oklch(0.65 0.12 330);
 }
 
 @layer base {
@@ -107,8 +117,8 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-color: #0a0a0a;
-    color: #ffffff;
+    background-color: var(--dd-plum);
+    color: var(--dd-white);
     font-family: 'DM Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -158,74 +168,152 @@
     }
   }
 
-  /* ---- DD Talks Custom Components ---- */
+  /* ── DD Talks Feminine Bloom Custom Components ── */
 
-  /* Glass card */
+  /* ── ALTERNATING SECTION SYSTEM ── */
+  /* Dark section: deep plum background, light text */
+  .dd-section-dark {
+    background-color: var(--dd-plum);
+    color: var(--dd-white);
+  }
+  /* Medium dark section: slightly lighter plum */
+  .dd-section-mid {
+    background-color: var(--dd-plum-2);
+    color: var(--dd-white);
+  }
+  /* Light section: warm cream background, dark text */
+  .dd-section-light {
+    background-color: var(--dd-cream);
+    color: var(--dd-plum);
+  }
+  /* Lavender-tinted light section */
+  .dd-section-blush {
+    background-color: var(--dd-cream-2);
+    color: var(--dd-plum);
+  }
+
+  /* Glass card — on dark backgrounds */
   .dd-glass {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(249, 115, 22, 0.20);
-    border-radius: 12px;
+    border: 1px solid rgba(192, 132, 168, 0.25);
+    border-radius: 16px;
+  }
+
+  /* Glass card — on light backgrounds */
+  .dd-glass-light {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(167, 139, 202, 0.30);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(192, 132, 168, 0.12);
   }
 
   .dd-glass-dark {
-    background: rgba(10, 10, 10, 0.80);
+    background: rgba(26, 15, 46, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(249, 115, 22, 0.15);
-    border-radius: 12px;
+    border: 1px solid rgba(192, 132, 168, 0.20);
+    border-radius: 16px;
   }
 
-  /* Orange glow button */
+  /* Primary button — dusty rose gradient */
   .dd-btn-primary {
-    background: linear-gradient(135deg, #F97316, #EA580C);
+    background: linear-gradient(135deg, #C084A8, #A8628A);
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     padding: 0.75rem 2rem;
-    border-radius: 4px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.30);
+    box-shadow: 0 4px 20px rgba(192, 132, 168, 0.35);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
   .dd-btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 35px rgba(249, 115, 22, 0.50);
+    box-shadow: 0 8px 32px rgba(192, 132, 168, 0.50);
+    background: linear-gradient(135deg, #D09ABE, #C084A8);
   }
   .dd-btn-primary:active {
     transform: scale(0.97);
   }
 
-  /* Ghost button */
-  .dd-btn-ghost {
-    background: transparent;
-    color: #F97316;
+  /* Primary button — on light backgrounds */
+  .dd-btn-primary-dark {
+    background: linear-gradient(135deg, #A8628A, #7B4A6B);
+    color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     padding: 0.75rem 2rem;
-    border-radius: 4px;
-    border: 1px solid rgba(249, 115, 22, 0.50);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 4px 20px rgba(168, 98, 138, 0.30);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .dd-btn-primary-dark:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(168, 98, 138, 0.45);
+  }
+  .dd-btn-primary-dark:active {
+    transform: scale(0.97);
+  }
+
+  /* Ghost button — on dark backgrounds */
+  .dd-btn-ghost {
+    background: transparent;
+    color: #C084A8;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: 1px solid rgba(192, 132, 168, 0.55);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
   .dd-btn-ghost:hover {
-    border-color: #F97316;
-    background: rgba(249, 115, 22, 0.08);
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.20);
+    border-color: #C084A8;
+    background: rgba(192, 132, 168, 0.10);
+    box-shadow: 0 0 20px rgba(192, 132, 168, 0.20);
   }
 
-  /* Orange accent rule */
+  /* Ghost button — on light backgrounds */
+  .dd-btn-ghost-light {
+    background: transparent;
+    color: #A8628A;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: 1.5px solid rgba(168, 98, 138, 0.55);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .dd-btn-ghost-light:hover {
+    border-color: #A8628A;
+    background: rgba(168, 98, 138, 0.08);
+    box-shadow: 0 0 20px rgba(168, 98, 138, 0.15);
+  }
+
+  /* Accent rule — rose gradient */
   .dd-rule {
     height: 2px;
-    background: linear-gradient(90deg, transparent, #F97316, transparent);
+    background: linear-gradient(90deg, transparent, #C084A8, #A78BCA, transparent);
     border: none;
     margin: 0;
   }
@@ -237,42 +325,71 @@
     font-weight: 600;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: #F97316;
+    color: #C084A8;
   }
 
-  /* Glow text */
+  /* Label on light backgrounds */
+  .dd-label-dark {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #A8628A;
+  }
+
+  /* Accent text — replaces orange glow */
   .dd-glow-text {
-    color: #F97316;
-    text-shadow: 0 0 30px rgba(249, 115, 22, 0.60);
+    color: #C084A8;
+    text-shadow: 0 0 30px rgba(192, 132, 168, 0.50);
   }
 
-  /* Episode card */
+  /* Accent text on light backgrounds */
+  .dd-accent-text {
+    color: #A8628A;
+  }
+
+  /* Episode card — on dark backgrounds */
   .dd-episode-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(249, 115, 22, 0.12);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(192, 132, 168, 0.15);
+    border-radius: 14px;
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .dd-episode-card:hover {
-    border-color: rgba(249, 115, 22, 0.40);
-    background: rgba(249, 115, 22, 0.05);
+    border-color: rgba(192, 132, 168, 0.45);
+    background: rgba(192, 132, 168, 0.06);
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(249, 115, 22, 0.12);
+    box-shadow: 0 8px 30px rgba(192, 132, 168, 0.14);
+  }
+
+  /* Episode card — on light backgrounds */
+  .dd-episode-card-light {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(167, 139, 202, 0.25);
+    border-radius: 14px;
+    transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 2px 12px rgba(192, 132, 168, 0.08);
+  }
+  .dd-episode-card-light:hover {
+    border-color: rgba(192, 132, 168, 0.50);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(192, 132, 168, 0.18);
   }
 
   /* Audience card */
   .dd-audience-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(249, 115, 22, 0.15);
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(192, 132, 168, 0.18);
+    border-radius: 16px;
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
   }
   .dd-audience-card:hover {
-    border-color: #F97316;
-    background: rgba(249, 115, 22, 0.06);
+    border-color: #C084A8;
+    background: rgba(192, 132, 168, 0.08);
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(249, 115, 22, 0.15);
+    box-shadow: 0 12px 40px rgba(192, 132, 168, 0.18);
   }
 
   /* Nav link */
@@ -287,17 +404,17 @@
     text-decoration: none;
   }
   .dd-nav-link:hover {
-    color: #F97316;
+    color: #E8B4D0;
   }
   .dd-nav-link.active {
-    color: #F97316;
+    color: #C084A8;
   }
 
-  /* Form input */
+  /* Form input — on dark backgrounds */
   .dd-input {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(249, 115, 22, 0.20);
-    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(192, 132, 168, 0.25);
+    border-radius: 10px;
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     padding: 0.75rem 1rem;
@@ -306,24 +423,58 @@
     outline: none;
   }
   .dd-input:focus {
-    border-color: #F97316;
-    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.12);
+    border-color: #C084A8;
+    box-shadow: 0 0 0 3px rgba(192, 132, 168, 0.15);
   }
   .dd-input::placeholder {
     color: rgba(255, 255, 255, 0.30);
+  }
+
+  /* Form input — on light backgrounds */
+  .dd-input-light {
+    background: rgba(255, 255, 255, 0.90);
+    border: 1.5px solid rgba(167, 139, 202, 0.35);
+    border-radius: 10px;
+    color: var(--dd-plum);
+    font-family: 'DM Sans', sans-serif;
+    padding: 0.75rem 1rem;
+    width: 100%;
+    transition: border-color 0.2s ease;
+    outline: none;
+  }
+  .dd-input-light:focus {
+    border-color: #A78BCA;
+    box-shadow: 0 0 0 3px rgba(167, 139, 202, 0.15);
+  }
+  .dd-input-light::placeholder {
+    color: rgba(26, 15, 46, 0.35);
   }
 
   /* Pillar icon box */
   .dd-pillar-icon {
     width: 48px;
     height: 48px;
-    background: rgba(249, 115, 22, 0.12);
-    border: 1px solid rgba(249, 115, 22, 0.25);
-    border-radius: 8px;
+    background: rgba(192, 132, 168, 0.14);
+    border: 1px solid rgba(192, 132, 168, 0.30);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F97316;
+    color: #C084A8;
+    flex-shrink: 0;
+  }
+
+  /* Pillar icon box — on light backgrounds */
+  .dd-pillar-icon-light {
+    width: 48px;
+    height: 48px;
+    background: rgba(167, 139, 202, 0.15);
+    border: 1px solid rgba(167, 139, 202, 0.35);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7B4A6B;
     flex-shrink: 0;
   }
 
@@ -343,19 +494,34 @@
     animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
 
-  /* Orange badge */
+  /* Badge — on dark backgrounds */
   .dd-badge {
     display: inline-block;
-    background: rgba(249, 115, 22, 0.15);
-    border: 1px solid rgba(249, 115, 22, 0.35);
-    color: #F97316;
+    background: rgba(192, 132, 168, 0.15);
+    border: 1px solid rgba(192, 132, 168, 0.40);
+    color: #E8B4D0;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.65rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 0.2rem 0.6rem;
-    border-radius: 3px;
+    padding: 0.2rem 0.7rem;
+    border-radius: 50px;
+  }
+
+  /* Badge — on light backgrounds */
+  .dd-badge-light {
+    display: inline-block;
+    background: rgba(167, 139, 202, 0.15);
+    border: 1px solid rgba(167, 139, 202, 0.40);
+    color: #7B4A6B;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.7rem;
+    border-radius: 50px;
   }
 
   /* Platform button */
@@ -363,20 +529,62 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 6px;
-    color: rgba(255, 255, 255, 0.80);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.82);
     font-family: 'DM Sans', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.1rem;
     text-decoration: none;
     transition: all 0.2s ease;
   }
   .dd-platform-btn:hover {
-    border-color: rgba(249, 115, 22, 0.40);
-    color: #F97316;
-    background: rgba(249, 115, 22, 0.06);
+    border-color: rgba(192, 132, 168, 0.50);
+    color: #E8B4D0;
+    background: rgba(192, 132, 168, 0.08);
+  }
+
+  /* Ticker tape */
+  @keyframes dd-ticker {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Great Vibes calligraphy class */
+  .font-great-vibes {
+    font-family: 'Great Vibes', cursive;
+  }
+
+  /* Decorative floral divider */
+  .dd-floral-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(192, 132, 168, 0.40), rgba(167, 139, 202, 0.40), transparent);
+    position: relative;
+  }
+  .dd-floral-divider::after {
+    content: '✦';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #C084A8;
+    font-size: 0.7rem;
+    background: var(--dd-plum);
+    padding: 0 0.5rem;
+  }
+  .dd-floral-divider-light::after {
+    background: var(--dd-cream);
+  }
+
+  /* Soft gradient overlay for hero images */
+  .dd-hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(26, 15, 46, 0.55) 0%,
+      rgba(26, 15, 46, 0.35) 40%,
+      rgba(26, 15, 46, 0.70) 100%
+    );
   }
 }

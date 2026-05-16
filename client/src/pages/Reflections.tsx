@@ -15,18 +15,18 @@ const REFLECTIONS = [
 
 export default function Reflections() {
   return (
-    <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+    <div style={{ background: "#1A0F2E", minHeight: "100vh" }}>
       <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "50vh", display: "flex", alignItems: "center" }}>
-        <div className="absolute inset-0" style={{ backgroundImage: `url(${MANIFESTO_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
-        <div className="absolute inset-0" style={{ background: "rgba(10,10,10,0.82)" }} />
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${MANIFESTO_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }} />
+        <div className="absolute inset-0" style={{ background: "rgba(26,15,46,0.82)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="dd-label mb-4">Reflections</p>
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 4rem)", color: "#ffffff", lineHeight: 1.1, marginBottom: "1rem" }}>
-              Thoughts Worth <span style={{ color: "#F97316", fontStyle: "italic" }}>Sitting With</span>
+              Thoughts Worth <span style={{ color: "#C084A8", fontStyle: "italic" }}>Sitting With</span>
             </h1>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.60)", maxWidth: "520px", lineHeight: 1.7 }}>
               A personal writing space where Denise shares reflections, encouragements, and honest observations about faith, life, and the seasons women walk through.
@@ -36,7 +36,7 @@ export default function Reflections() {
       </section>
 
       {/* Reflections grid */}
-      <section style={{ background: "#0a0a0a", padding: "4rem 0 6rem" }}>
+      <section style={{ background: "#1A0F2E", padding: "4rem 0 6rem" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {REFLECTIONS.map((r, i) => (
@@ -52,7 +52,7 @@ export default function Reflections() {
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7, marginBottom: "1.25rem" }}>{r.excerpt}</p>
                 <div className="flex items-center justify-between mt-auto">
                   <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "rgba(255,255,255,0.35)" }}>{r.date}</span>
-                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "#F97316", fontWeight: 600 }}>Read More →</span>
+                  <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "#C084A8", fontWeight: 600 }}>Read More →</span>
                 </div>
               </motion.div>
             ))}

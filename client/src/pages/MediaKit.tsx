@@ -23,16 +23,16 @@ const FORMATS = [
 
 export default function MediaKit() {
   return (
-    <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+    <div style={{ background: "#1A0F2E", minHeight: "100vh" }}>
       <Navbar />
 
       {/* Hero */}
-      <section style={{ paddingTop: "80px", background: "#0d0d0d", padding: "7rem 0 5rem" }}>
+      <section style={{ paddingTop: "80px", background: "#FAF7F5", padding: "7rem 0 5rem" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="dd-label mb-4">Media Kit</p>
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(2.5rem, 6vw, 4.5rem)", color: "#ffffff", lineHeight: 1.1, marginBottom: "1.25rem", maxWidth: "700px" }}>
-              A Voice the World Is <span style={{ color: "#F97316", fontStyle: "italic" }}>Ready to Hear.</span>
+              A Voice the World Is <span style={{ color: "#C084A8", fontStyle: "italic" }}>Ready to Hear.</span>
             </h1>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", color: "rgba(255,255,255,0.65)", maxWidth: "560px", lineHeight: 1.7, marginBottom: "2rem" }}>
               Denise Danberg is a rising media personality, podcast host, speaker, and conversation leader with a growing national audience and a five-star reputation for authenticity.
@@ -50,7 +50,7 @@ export default function MediaKit() {
       </section>
 
       {/* Stats */}
-      <section style={{ background: "#111111", padding: "4rem 0" }}>
+      <section style={{ background: "#221540", padding: "4rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             {[
@@ -61,7 +61,7 @@ export default function MediaKit() {
             ].map((s, i) => (
               <div key={i} className="dd-glass p-6 text-center">
                 <div className="dd-pillar-icon mx-auto mb-3">{s.icon}</div>
-                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.6rem", color: "#F97316" }}>{s.value}</p>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.6rem", color: "#C084A8" }}>{s.value}</p>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.50)", letterSpacing: "0.1em", textTransform: "uppercase" }}>{s.label}</p>
               </div>
             ))}
@@ -70,17 +70,17 @@ export default function MediaKit() {
       </section>
 
       {/* Bio */}
-      <section style={{ background: "#0d0d0d", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="lg:col-span-2">
-              <p className="dd-label mb-5">Official Bio</p>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "#ffffff", marginBottom: "1.5rem" }}>
-                Denise Danberg — <span style={{ color: "#F97316", fontStyle: "italic" }}>DD</span>
+              <p className="dd-label-dark mb-5">Official Bio</p>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "#1A0F2E", marginBottom: "1.5rem" }}>
+                Denise Danberg — <span style={{ color: "#C084A8", fontStyle: "italic" }}>DD</span>
               </h2>
               <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.68)", lineHeight: 1.8 }}>
                 <p style={{ marginBottom: "1.25rem" }}>
-                  Denise Danberg — known to her listeners and community as DD — is a woman of faith, a mother, a friend, and a voice that does not flinch from the real stuff of life. She is the co-host of <em style={{ color: "#F97316" }}>By Grit and Grace – We Are Warriors</em>, a top-rated faith and life podcast with over 75 episodes and a five-star rating on Apple Podcasts, launched in June 2024.
+                  Denise Danberg — known to her listeners and community as DD — is a woman of faith, a mother, a friend, and a voice that does not flinch from the real stuff of life. She is the co-host of <em style={{ color: "#C084A8" }}>By Grit and Grace – We Are Warriors</em>, a top-rated faith and life podcast with over 75 episodes and a five-star rating on Apple Podcasts, launched in June 2024.
                 </p>
                 <p style={{ marginBottom: "1.25rem" }}>
                   Through DD Talks, her personal brand platform, Denise is building a space where honest conversation, faith-filled courage, and grace for the messy middle come together. She speaks at faith events, women's gatherings, community organizations, and leadership conversations — bringing warmth, humor, and the kind of authenticity that makes a room feel safe.
@@ -91,34 +91,34 @@ export default function MediaKit() {
               </div>
             </div>
             <div>
-              <p className="dd-label mb-5">Brand Assets</p>
-              <div className="dd-glass p-6 mb-4">
+              <p className="dd-label-dark mb-5">Brand Assets</p>
+              <div className="dd-glass-light p-6 mb-4">
                 <div className="flex items-center gap-3 mb-4">
                   <img src={LOGO_URL} alt="DD Talks Logo" className="h-14 w-14 object-contain" />
                   <div>
-                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1rem", color: "#ffffff" }}>DD <span style={{ color: "#F97316" }}>Talks</span></p>
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.65rem", color: "rgba(255,255,255,0.40)", letterSpacing: "0.12em", textTransform: "uppercase" }}>Denise Danberg</p>
+                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1rem", color: "#1A0F2E" }}>DD <span style={{ color: "#C084A8" }}>Talks</span></p>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.65rem", color: "rgba(26,15,46,0.40)", letterSpacing: "0.12em", textTransform: "uppercase" }}>Denise Danberg</p>
                   </div>
                 </div>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.50)", lineHeight: 1.6, marginBottom: "1rem" }}>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", color: "rgba(26,15,46,0.50)", lineHeight: 1.6, marginBottom: "1rem" }}>
                   Full brand asset package — logo files, color palette, typography guide, and approved photography — available upon request via the contact form.
                 </p>
                 <Link href="/contact">
                   <button className="dd-btn-ghost w-full" style={{ fontSize: "0.72rem" }}>Request Brand Assets</button>
                 </Link>
               </div>
-              <div className="dd-glass p-5">
-                <p className="dd-label mb-3" style={{ fontSize: "0.60rem" }}>Brand Colors</p>
+              <div className="dd-glass-light p-5">
+                <p className="dd-label-dark mb-3" style={{ fontSize: "0.60rem" }}>Brand Colors</p>
                 <div className="flex gap-2">
                   {[
-                    { color: "#0a0a0a", label: "Black" },
-                    { color: "#F97316", label: "Orange" },
-                    { color: "#D97706", label: "Gold" },
-                    { color: "#ffffff", label: "White" },
+                    { color: "#1A0F2E", label: "Plum" },
+                    { color: "#C084A8", label: "Rose" },
+                    { color: "#A78BCA", label: "Lavender" },
+                    { color: "#7EB8D4", label: "Blue" },
                   ].map((c) => (
                     <div key={c.color} className="text-center">
                       <div style={{ width: 36, height: 36, background: c.color, borderRadius: "6px", border: "1px solid rgba(255,255,255,0.12)", marginBottom: "0.25rem" }} />
-                      <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.6rem", color: "rgba(255,255,255,0.40)" }}>{c.label}</p>
+                      <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.6rem", color: "rgba(26,15,46,0.40)" }}>{c.label}</p>
                     </div>
                   ))}
                 </div>
@@ -129,12 +129,12 @@ export default function MediaKit() {
       </section>
 
       {/* Topics */}
-      <section style={{ background: "#111111", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "5rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Topics & Expertise</p>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#ffffff" }}>
-              What Denise <span style={{ color: "#F97316", fontStyle: "italic" }}>Speaks To</span>
+              What Denise <span style={{ color: "#C084A8", fontStyle: "italic" }}>Speaks To</span>
             </h2>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
@@ -146,18 +146,18 @@ export default function MediaKit() {
       </section>
 
       {/* Formats */}
-      <section style={{ background: "#0a0a0a", padding: "5rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Available Formats</p>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.6rem, 3vw, 2.4rem)", color: "#ffffff" }}>
-              How to Work with <span style={{ color: "#F97316", fontStyle: "italic" }}>DD</span>
+              How to Work with <span style={{ color: "#C084A8", fontStyle: "italic" }}>DD</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {FORMATS.map((f, i) => (
               <div key={i} className="dd-glass p-6">
-                <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1rem", color: "#F97316", marginBottom: "0.5rem" }}>{f.title}</h4>
+                <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1rem", color: "#C084A8", marginBottom: "0.5rem" }}>{f.title}</h4>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.58)", lineHeight: 1.65 }}>{f.desc}</p>
               </div>
             ))}
@@ -166,11 +166,11 @@ export default function MediaKit() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#111111", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "5rem 0" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-4">Get in Touch</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#ffffff", marginBottom: "1.25rem" }}>
-            Ready to Feature <span style={{ color: "#F97316", fontStyle: "italic" }}>DD?</span>
+            Ready to Feature <span style={{ color: "#C084A8", fontStyle: "italic" }}>DD?</span>
           </h2>
           <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.58)", lineHeight: 1.7, marginBottom: "2rem" }}>
             For media inquiries, interview requests, feature pitches, and brand partnership proposals, please use the contact form. All media inquiries are personally reviewed.

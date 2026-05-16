@@ -31,13 +31,13 @@ export default function AudiencePage({ page }: Props) {
   const bgUrl = BG_MAP[page.bgAccent] || HERO_BG_URL;
 
   return (
-    <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+    <div style={{ background: "#1A0F2E", minHeight: "100vh" }}>
       <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "65vh", display: "flex", alignItems: "center" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${bgUrl})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
-        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.65) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(26,15,46,0.95) 0%, rgba(26,15,46,0.65) 100%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="dd-label mb-4">{page.label}</p>
@@ -48,7 +48,7 @@ export default function AudiencePage({ page }: Props) {
                 <>
                   {page.headline.split(".")[0].trim()}.
                   {page.headline.includes(".") && (
-                    <span style={{ color: "#F97316", fontStyle: "italic" }}>
+                    <span style={{ color: "#C084A8", fontStyle: "italic" }}>
                       {" "}{page.headline.split(".").slice(1).join(".").trim()}
                     </span>
                   )}
@@ -76,10 +76,10 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Intro */}
-      <section style={{ background: "#0d0d0d", padding: "5rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "5rem 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.85, textAlign: "center" }}>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", color: "rgba(26,15,46,0.72)", lineHeight: 1.85, textAlign: "center" }}>
               {page.intro}
             </p>
           </motion.div>
@@ -87,12 +87,12 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Value props */}
-      <section style={{ background: "#111111", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "5rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Why DD Talks Is for You</p>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.6rem, 3.5vw, 2.4rem)", color: "#ffffff" }}>
-              What You Will Find <span style={{ color: "#F97316", fontStyle: "italic" }}>Here</span>
+              What You Will Find <span style={{ color: "#C084A8", fontStyle: "italic" }}>Here</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -106,8 +106,8 @@ export default function AudiencePage({ page }: Props) {
                 className="dd-glass p-7"
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
-                  <div style={{ width: 28, height: 28, background: "rgba(249,115,22,0.12)", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                    <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "0.78rem", color: "#F97316" }}>{String(i + 1).padStart(2, "0")}</span>
+                  <div style={{ width: 28, height: 28, background: "rgba(192,132,168,0.12)", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "0.78rem", color: "#C084A8" }}>{String(i + 1).padStart(2, "0")}</span>
                   </div>
                   <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1.05rem", color: "#ffffff" }}>{vp.title}</h3>
                 </div>
@@ -119,7 +119,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Manifesto teaser */}
-      <section style={{ background: "#0a0a0a", padding: "5rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-6">What DD Believes</p>
           <div className="space-y-3 mb-8">
@@ -127,20 +127,20 @@ export default function AudiencePage({ page }: Props) {
               <p key={i} style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "clamp(0.95rem, 2vw, 1.15rem)", color: "rgba(255,255,255,0.78)", lineHeight: 1.5 }}>{line}</p>
             ))}
           </div>
-          <blockquote style={{ borderLeft: "3px solid #F97316", paddingLeft: "1.25rem", textAlign: "left", fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "1.1rem", color: "rgba(255,255,255,0.82)", marginBottom: "2rem" }}>
+          <blockquote style={{ borderLeft: "3px solid #C084A8", paddingLeft: "1.25rem", textAlign: "left", fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "1.1rem", color: "rgba(255,255,255,0.82)", marginBottom: "2rem" }}>
             "The conversation you are afraid to start is usually the one that changes everything."
             <br />
-            <span style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: "normal", fontSize: "0.75rem", color: "#F97316", letterSpacing: "0.08em" }}>— Denise Danberg</span>
+            <span style={{ fontFamily: "'DM Sans', sans-serif", fontStyle: "normal", fontSize: "0.75rem", color: "#C084A8", letterSpacing: "0.08em" }}>— Denise Danberg</span>
           </blockquote>
         </div>
       </section>
 
       {/* Revolution teaser */}
-      <section style={{ background: "#111111", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "5rem 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-5">Something Big Is Coming</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(1.8rem, 4vw, 3rem)", color: "#ffffff", lineHeight: 1.15, marginBottom: "1.25rem" }}>
-            The <span style={{ color: "#F97316", fontStyle: "italic" }}>Revolution</span> Starts Here.
+            The <span style={{ color: "#C084A8", fontStyle: "italic" }}>Revolution</span> Starts Here.
           </h2>
           <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", color: "rgba(255,255,255,0.60)", lineHeight: 1.8, marginBottom: "2rem", maxWidth: "560px", margin: "0 auto 2rem" }}>
             DD Talks is preparing for a bold new chapter. Denise Danberg has a unique perspective, a powerful voice, and a message the world is ready to hear. Follow now and be part of what is coming.
@@ -157,7 +157,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Other audiences */}
-      <section style={{ background: "#0a0a0a", padding: "4rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "4rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-4">Explore More</p>
           <div className="flex flex-wrap justify-center gap-3">

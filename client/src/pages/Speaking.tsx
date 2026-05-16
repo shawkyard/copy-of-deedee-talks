@@ -23,19 +23,19 @@ export default function Speaking() {
   const handleSubmit = (e: React.FormEvent) => { e.preventDefault(); setSubmitted(true); };
 
   return (
-    <div style={{ background: "#0a0a0a", minHeight: "100vh" }}>
+    <div style={{ background: "#1A0F2E", minHeight: "100vh" }}>
       <Navbar />
 
       {/* Hero */}
       <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "60vh", display: "flex", alignItems: "center" }}>
-        <div className="absolute inset-0" style={{ backgroundImage: `url(${SPEAKING_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
-        <div className="absolute inset-0" style={{ background: "rgba(10,10,10,0.82)" }} />
+        <div className="absolute inset-0" style={{ backgroundImage: `url(${SPEAKING_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }} />
+        <div className="absolute inset-0" style={{ background: "rgba(26,15,46,0.82)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="dd-label mb-4">Speaking & Events</p>
             <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(2.5rem, 6vw, 4.5rem)", color: "#ffffff", lineHeight: 1.1, marginBottom: "1.25rem" }}>
               Invite DD Into{" "}
-              <span style={{ color: "#F97316", fontStyle: "italic" }}>the Conversation</span>
+              <span style={{ color: "#C084A8", fontStyle: "italic" }}>the Conversation</span>
             </h1>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.1rem", color: "rgba(255,255,255,0.65)", maxWidth: "560px", lineHeight: 1.7 }}>
               Denise Danberg is available for faith-centered events, women's groups, community gatherings, panels, podcast guest appearances, and leadership conversations.
@@ -45,12 +45,12 @@ export default function Speaking() {
       </section>
 
       {/* What to expect */}
-      <section style={{ background: "#0d0d0d", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="dd-label mb-4">What to Expect</p>
-            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#ffffff" }}>
-              A Voice That <span style={{ color: "#F97316", fontStyle: "italic" }}>Moves a Room</span>
+            <p className="dd-label-dark mb-4">What to Expect</p>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#1A0F2E" }}>
+              A Voice That <span style={{ color: "#C084A8", fontStyle: "italic" }}>Moves a Room</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -59,8 +59,8 @@ export default function Speaking() {
               { title: "Warmth & Humor", body: "She brings the kind of energy that makes a room feel like a living room — safe, real, and alive. Your audience will leave feeling seen." },
               { title: "Faith-Filled Courage", body: "Every conversation Denise leads is grounded in faith, honesty, and the belief that real talk changes real lives." },
             ].map((c, i) => (
-              <div key={i} className="dd-glass p-8">
-                <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1.2rem", color: "#F97316", marginBottom: "0.75rem" }}>{c.title}</h3>
+              <div key={i} className="dd-glass-light p-8">
+                <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1.2rem", color: "#C084A8", marginBottom: "0.75rem" }}>{c.title}</h3>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.62)", lineHeight: 1.7 }}>{c.body}</p>
               </div>
             ))}
@@ -69,19 +69,19 @@ export default function Speaking() {
       </section>
 
       {/* Topics */}
-      <section style={{ background: "#111111", padding: "6rem 0" }}>
+      <section style={{ background: "#221540", padding: "6rem 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="dd-label mb-4">Speaking Topics</p>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#ffffff" }}>
-              Conversations That <span style={{ color: "#F97316", fontStyle: "italic" }}>Change Things</span>
+              Conversations That <span style={{ color: "#C084A8", fontStyle: "italic" }}>Change Things</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {SPEAKING_TOPICS.map((t, i) => (
               <div key={i} className="dd-glass p-6">
-                <div style={{ width: 32, height: 32, background: "rgba(249,115,22,0.12)", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "0.75rem" }}>
-                  <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "0.85rem", color: "#F97316" }}>{String(i + 1).padStart(2, "0")}</span>
+                <div style={{ width: 32, height: 32, background: "rgba(192,132,168,0.12)", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "0.75rem" }}>
+                  <span style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "0.85rem", color: "#C084A8" }}>{String(i + 1).padStart(2, "0")}</span>
                 </div>
                 <h4 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "0.95rem", color: "#ffffff", marginBottom: "0.5rem", lineHeight: 1.3 }}>{t.title}</h4>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.52)", lineHeight: 1.6 }}>{t.desc}</p>
@@ -92,12 +92,12 @@ export default function Speaking() {
       </section>
 
       {/* Inquiry form */}
-      <section style={{ background: "#0a0a0a", padding: "6rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "6rem 0" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Book DD</p>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 4vw, 2.6rem)", color: "#ffffff" }}>
-              Submit a <span style={{ color: "#F97316", fontStyle: "italic" }}>Speaking Inquiry</span>
+              Submit a <span style={{ color: "#C084A8", fontStyle: "italic" }}>Speaking Inquiry</span>
             </h2>
           </div>
           <div className="dd-glass p-8 md:p-10">
@@ -148,7 +148,7 @@ export default function Speaking() {
                   <div className="flex gap-4">
                     {["In-Person", "Virtual", "Hybrid"].map((f) => (
                       <label key={f} style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.70)" }}>
-                        <input type="radio" name="format" value={f} checked={form.format === f} onChange={() => setForm({ ...form, format: f })} style={{ accentColor: "#F97316" }} />
+                        <input type="radio" name="format" value={f} checked={form.format === f} onChange={() => setForm({ ...form, format: f })} style={{ accentColor: "#C084A8" }} />
                         {f}
                       </label>
                     ))}

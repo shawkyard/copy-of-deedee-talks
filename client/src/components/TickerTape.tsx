@@ -1,5 +1,5 @@
 // DD Talks — TickerTape Component
-// Clean CSS marquee — no doubling, no overlap
+// Feminine Bloom theme: deep plum bar, dusty rose highlights, blush dots
 
 import { Link } from "wouter";
 import { APPLE_PODCASTS_URL, SPOTIFY_URL } from "@/lib/data";
@@ -20,7 +20,7 @@ const ITEMS = [
   { type: "dot" },
   { type: "text", text: "JOIN THE COMMUNITY — Blessings, Events & More", href: "/#mailing-list", highlight: true },
   { type: "dot" },
-  { type: "text", text: "Faith. Family. Fire. — This Is DD Talks", href: "/about" },
+  { type: "text", text: "Faith. Family. Grace. — This Is DD Talks", href: "/about" },
   { type: "dot" },
   { type: "text", text: "SPEAKING EVENTS — Book Denise Danberg for Your Next Event", href: "/speaking", highlight: true },
   { type: "dot" },
@@ -37,7 +37,7 @@ function renderItem(item: typeof ITEMS[0], key: string) {
           width: "4px",
           height: "4px",
           borderRadius: "50%",
-          background: "rgba(249,115,22,0.60)",
+          background: "rgba(232,180,208,0.55)",
           margin: "0 20px",
           verticalAlign: "middle",
           flexShrink: 0,
@@ -54,7 +54,7 @@ function renderItem(item: typeof ITEMS[0], key: string) {
         fontSize: "0.70rem",
         letterSpacing: item.highlight ? "0.14em" : "0.05em",
         textTransform: item.highlight ? "uppercase" : "none",
-        color: item.highlight ? "#F97316" : "rgba(255,255,255,0.75)",
+        color: item.highlight ? "#E8B4D0" : "rgba(255,255,255,0.70)",
         whiteSpace: "nowrap",
         display: "inline-block",
       }}
@@ -92,9 +92,9 @@ export default function TickerTape() {
     <div
       className="fixed top-0 left-0 right-0 z-[60]"
       style={{
-        height: "34px",
-        background: "#0a0a0a",
-        borderBottom: "1px solid rgba(249,115,22,0.25)",
+        height: "36px",
+        background: "linear-gradient(90deg, #1A0F2E 0%, #221540 50%, #1A0F2E 100%)",
+        borderBottom: "1px solid rgba(192,132,168,0.22)",
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
@@ -108,7 +108,7 @@ export default function TickerTape() {
           top: 0,
           bottom: 0,
           width: "60px",
-          background: "linear-gradient(to right, #0a0a0a 0%, transparent 100%)",
+          background: "linear-gradient(to right, #1A0F2E 0%, transparent 100%)",
           zIndex: 2,
           pointerEvents: "none",
         }}
@@ -138,7 +138,7 @@ export default function TickerTape() {
           top: 0,
           bottom: 0,
           width: "60px",
-          background: "linear-gradient(to left, #0a0a0a 0%, transparent 100%)",
+          background: "linear-gradient(to left, #1A0F2E 0%, transparent 100%)",
           zIndex: 2,
           pointerEvents: "none",
         }}
@@ -150,7 +150,7 @@ export default function TickerTape() {
           100% { transform: translateX(-50%); }
         }
         .ticker-link:hover span {
-          color: #F97316 !important;
+          color: #C084A8 !important;
         }
         @media (prefers-reduced-motion: reduce) {
           .ticker-track { animation: none !important; }
