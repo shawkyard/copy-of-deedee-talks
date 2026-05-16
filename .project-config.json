@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663573907938/YQjocCFgsRHmxQ7x85rn3n",
+    "access_key_id": "ASIAZV3A2ECZEGQC7ALK",
+    "secret_access_key": "+HYPlxzP7qKCp1Vk3+/8KactxC/X9W5Sh6SBQrq9",
+    "session_token": "IQoJb3JpZ2luX2VjEMz//////////wEaCXVzLWVhc3QtMSJGMEQCIBF7dA9QmZBp6QWLSWJVISVkSGK+amp498ENNWiZz9F0AiBdGjfQNKKK+64plWzoWnFOFEaY6LaTfQD62Ig92n60eyr/AwiV//////////8BEAQaDDY2NTM4NjA5ODg2NiIMFksEd3eI/tuBdrODKtMDXK2/5KfPBTjnzhMDh7N5ol6EyBepqadSbxHz6FJUfAxGLa7+9CE7NL4wdjvNZGIQ/KGT9V101WyapB/aw6RAbC4z4Ntbp/qfgXQlVnm0WOXo0c/g72OSv/Si1f2opm+cSJ+85OIk+eZTj/nL8gRSAx7rKsEeeXUcPmsk5WCpvNjWT7UkMZ48bDHx5Zi3c5JjdwCHMyDLLCMIPy4SgX1dbefrSoeURMW0ws3FMRr2inhlvbHlVZA1dtAo3eA3s/qF3O2Ep+Q4KybJ5BzweK3IjVPeUbGtHkiJZfsU7yThsyCyFodlTsSIjOp6hqfsBAVHL/nOhaogejmqtLY1KFwW+cEHCYEzf0uAM3K/CXqb/IIzyfmlubrLwyMGPvpJjF0l5LsOsnwuUkzasAGYusDCNMkareyBUfPMzaHhKlefG+OL6pPNBGV5LM6rsBHY+hY/1z4ZAMe/NLTpiuMSKBfK4Ec5b4daZDWM3UiRQTA4fQpnrRlYK/o2aoDvFKAaGmMVXGiOkkLBqauXHXTVSHZyUf0RUY668rnOKWsmS2UpDx8p2d/qeYIJBEq8iO+75aCu9egUY61XTcdOX+fZgWiEYV8o+jCu0EYp1E6GfKFpOAVXevEwiYmj0AY6ngFNErnX8yq/acozorTN/eZyPzzucwN0Xn3rKLu17wuZTrk3RHriQespnYyWW3liTIQzPqJycM9UMLLKkYBtfmK0Ru9R+FUwag3gGQN7OtdvH5iNXqhbVPscuOhgLGCma85+renZ0JyO9bt4tJTfe1+RqvayEEBQ0TsAB7ge41no//6ULNSLd+3I8b3zXZrMdq1i56JJzq808pJkMbcSOA==",
+    "expiration": "2026-05-17T07:24:57.000Z"
+  },
+  "name": "deedee-talks",
+  "path": "/home/ubuntu/deedee-talks",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "kJXR8pYWbAuQA8x7EQhBim",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "dy8fmomKAcgRxb5b5dgcWq",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Scott Hawkyard",
+    "OWNER_OPEN_ID": "DoNM6nknZY8mpNmPPEE4XB",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "0fedb11f-01a2-40cc-84d8-659d03ad1bd8",
+    "VITE_APP_ID": "YQjocCFgsRHmxQ7x85rn3n",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "DeeDee Talks",
+    "VITE_FRONTEND_FORGE_API_KEY": "e2g3sbobseesFHCESRvZAU",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
