@@ -236,13 +236,13 @@ export default function Home() {
               }}
             >
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/podcast-hero-studio-jtzLC927k53qSifaWD9f6D.webp"
-                alt="DD Talks Podcast Studio"
+                src={DENISE_PORTRAIT_URL}
+                alt="Denise Danberg — DD Talks"
                 style={{
                   width: "100%",
                   height: "auto",
                   display: "block",
-                  maxHeight: "600px",
+                  maxHeight: "620px",
                   objectFit: "cover",
                   objectPosition: "center top",
                 }}
