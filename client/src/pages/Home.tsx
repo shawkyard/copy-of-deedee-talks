@@ -236,8 +236,8 @@ export default function Home() {
               }}
             >
               <img
-                src={DENISE_PORTRAIT_URL}
-                alt="Denise Danberg — DD Talks"
+                src="/manus-storage/denise-podcast-portrait_af6ade7a.png"
+                alt="Denise Danberg — DD Talks Podcast Host"
                 style={{
                   width: "100%",
                   height: "auto",
