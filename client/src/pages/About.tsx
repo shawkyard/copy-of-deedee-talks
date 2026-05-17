@@ -4,7 +4,7 @@ import { Link } from "wouter";
 import { ArrowRight, Mic, Heart, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { LOGO_URL, HERO_BG_URL, APPLE_PODCASTS_URL, MANIFESTO_LINES, MANIFESTO_BG_URL, DENISE_JASON_URL, DENISE_LAURA_URL, DENISE_MOM_URL, DENISE_PORTRAIT_URL } from "@/lib/data";
+import { LOGO_URL, HERO_BG_URL, APPLE_PODCASTS_URL, MANIFESTO_LINES, MANIFESTO_BG_URL, DENISE_PORTRAIT_URL } from "@/lib/data";
 
 export default function About() {
   return (
@@ -54,13 +54,15 @@ export default function About() {
                   <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "#C084A8", letterSpacing: "0.12em", textTransform: "uppercase" }}>DD — Host & Conversation Architect</p>
                 </div>
               </div>
-              {/* Floating mini: Denise & Laura */}
-              <div className="absolute -top-4 -right-4 rounded-xl overflow-hidden" style={{ width: 130, height: 130, border: "2px solid rgba(192,132,168,0.50)", boxShadow: "0 8px 32px rgba(0,0,0,0.60)", zIndex: 10 }}>
-                <img src={DENISE_LAURA_URL} alt="Denise with Laura" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+              {/* Floating badge — top-right */}
+              <div className="absolute -top-4 -right-4 rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(192,132,168,0.92), rgba(167,139,202,0.92))", backdropFilter: "blur(10px)", border: "1px solid rgba(255,255,255,0.25)", boxShadow: "0 8px 32px rgba(192,132,168,0.40)", padding: "0.9rem 1.1rem", zIndex: 10, textAlign: "center", minWidth: 110 }}>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "1.05rem", color: "#fff", lineHeight: 1.3, margin: 0 }}>75+</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.62rem", color: "rgba(255,255,255,0.85)", letterSpacing: "0.12em", textTransform: "uppercase", marginTop: "0.2rem" }}>Episodes</p>
               </div>
-              {/* Floating mini: Denise & Mom */}
-              <div className="absolute -bottom-4 -right-4 rounded-xl overflow-hidden" style={{ width: 120, height: 120, border: "2px solid rgba(192,132,168,0.50)", boxShadow: "0 8px 32px rgba(0,0,0,0.60)", zIndex: 10 }}>
-                <img src={DENISE_MOM_URL} alt="Denise with Mom" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+              {/* Floating badge — bottom-right */}
+              <div className="absolute -bottom-4 -right-4 rounded-2xl" style={{ background: "rgba(26,15,46,0.88)", backdropFilter: "blur(10px)", border: "1px solid rgba(192,132,168,0.40)", boxShadow: "0 8px 32px rgba(0,0,0,0.50)", padding: "0.9rem 1.1rem", zIndex: 10, textAlign: "center", minWidth: 110 }}>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "0.85rem", color: "#C084A8", lineHeight: 1.3, margin: 0 }}>Real Talk</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.62rem", color: "rgba(255,255,255,0.70)", letterSpacing: "0.12em", textTransform: "uppercase", marginTop: "0.2rem" }}>Always</p>
               </div>
             </div>
             <div>

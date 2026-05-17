@@ -23,9 +23,6 @@ import {
   PILLARS,
   MANIFESTO_LINES,
   AUDIENCE_PAGES,
-  DENISE_JASON_URL,
-  DENISE_LAURA_URL,
-  DENISE_MOM_URL,
   DENISE_PORTRAIT_URL,
 } from "@/lib/data";
 
@@ -348,39 +345,39 @@ export default function Home() {
                     }}
                   />
                 </div>
-                {/* Floating mini photo — Denise & Laura (top-right) */}
+                {/* Floating badge — top-right */}
                 <div
-                  className="absolute -top-4 -right-4 rounded-xl overflow-hidden"
+                  className="absolute -top-4 -right-4 rounded-2xl"
                   style={{
-                    width: 140,
-                    height: 140,
-                    border: "2px solid rgba(192,132,168,0.50)",
-                    boxShadow: "0 8px 32px rgba(0,0,0,0.60)",
+                    background: "linear-gradient(135deg, rgba(192,132,168,0.92), rgba(167,139,202,0.92))",
+                    backdropFilter: "blur(10px)",
+                    border: "1px solid rgba(255,255,255,0.25)",
+                    boxShadow: "0 8px 32px rgba(192,132,168,0.40)",
+                    padding: "0.9rem 1.1rem",
                     zIndex: 10,
+                    textAlign: "center",
+                    minWidth: 120,
                   }}
                 >
-                  <img
-                    src={DENISE_LAURA_URL}
-                    alt="Denise with Laura"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
-                  />
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "1.05rem", color: "#fff", lineHeight: 1.3, margin: 0 }}>75+</p>
+                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.65rem", color: "rgba(255,255,255,0.85)", letterSpacing: "0.12em", textTransform: "uppercase", marginTop: "0.25rem" }}>Episodes</p>
                 </div>
-                {/* Floating mini photo — Denise & Mom (bottom-right) */}
+                {/* Floating badge — bottom-right */}
                 <div
-                  className="absolute -bottom-4 -right-4 rounded-xl overflow-hidden"
+                  className="absolute -bottom-4 -right-4 rounded-2xl"
                   style={{
-                    width: 130,
-                    height: 130,
-                    border: "2px solid rgba(192,132,168,0.50)",
-                    boxShadow: "0 8px 32px rgba(0,0,0,0.60)",
+                    background: "rgba(26,15,46,0.88)",
+                    backdropFilter: "blur(10px)",
+                    border: "1px solid rgba(192,132,168,0.40)",
+                    boxShadow: "0 8px 32px rgba(0,0,0,0.50)",
+                    padding: "0.9rem 1.1rem",
                     zIndex: 10,
+                    textAlign: "center",
+                    minWidth: 120,
                   }}
                 >
-                  <img
-                    src={DENISE_MOM_URL}
-                    alt="Denise with Mom"
-                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
-                  />
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "0.85rem", color: "#C084A8", lineHeight: 1.3, margin: 0 }}>Faith-Filled</p>
+                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.65rem", color: "rgba(255,255,255,0.70)", letterSpacing: "0.12em", textTransform: "uppercase", marginTop: "0.25rem" }}>Courage</p>
                 </div>
               </div>
             </AnimSection>
@@ -1195,87 +1192,29 @@ export default function Home() {
           </AnimSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Photo 1: Denise & Jason */}
-            <AnimSection>
-              <div
-                className="relative rounded-2xl overflow-hidden group"
-                style={{
-                  aspectRatio: "4/5",
-                  border: "2px solid rgba(192,132,168,0.30)",
-                  boxShadow: "0 0 40px rgba(192,132,168,0.15), 0 20px 50px rgba(0,0,0,0.70)",
-                }}
-              >
-                <img
-                  src={DENISE_JASON_URL}
-                  alt="Denise & Jason"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", transition: "transform 0.5s ease" }}
-                  className="group-hover:scale-105"
-                />
+            {[
+              { number: "75+", label: "Episodes", desc: "Real conversations that go deep, stay honest, and leave you changed." },
+              { number: "Faith", label: "at the Center", desc: "Every episode is rooted in the belief that grace meets you exactly where you are." },
+              { number: "You", label: "Are Not Alone", desc: "DD Talks exists for the woman who needs to hear someone else say \"me too.\"" },
+            ].map((item, i) => (
+              <AnimSection key={i}>
                 <div
-                  className="absolute inset-0"
-                  style={{ background: "linear-gradient(to top, rgba(26,15,46,0.90) 0%, transparent 50%)" }}
-                />
-                <div className="absolute bottom-0 left-0 right-0" style={{ padding: "1.25rem" }}>
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1rem", color: "#ffffff", marginBottom: "0.2rem" }}>Denise &amp; Jason</p>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "#C084A8", letterSpacing: "0.10em", textTransform: "uppercase" }}>Her Person. Her Partner.</p>
+                  className="relative rounded-2xl"
+                  style={{
+                    padding: "2.5rem 2rem",
+                    background: i === 1 ? "linear-gradient(135deg, rgba(192,132,168,0.18), rgba(167,139,202,0.12))" : "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(192,132,168,0.25)",
+                    boxShadow: "0 0 40px rgba(192,132,168,0.08), 0 20px 50px rgba(0,0,0,0.40)",
+                    marginTop: i === 1 ? "2rem" : "0",
+                    textAlign: "center",
+                  }}
+                >
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontWeight: 700, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#C084A8", marginBottom: "0.25rem" }}>{item.number}</p>
+                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "rgba(255,255,255,0.55)", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "1.25rem" }}>{item.label}</p>
+                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.7 }}>{item.desc}</p>
                 </div>
-              </div>
-            </AnimSection>
-
-            {/* Photo 2: Denise & Laura */}
-            <AnimSection>
-              <div
-                className="relative rounded-2xl overflow-hidden group"
-                style={{
-                  aspectRatio: "4/5",
-                  border: "2px solid rgba(192,132,168,0.30)",
-                  boxShadow: "0 0 40px rgba(192,132,168,0.15), 0 20px 50px rgba(0,0,0,0.70)",
-                  marginTop: "2rem",
-                }}
-              >
-                <img
-                  src={DENISE_LAURA_URL}
-                  alt="Denise & Laura"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", transition: "transform 0.5s ease" }}
-                  className="group-hover:scale-105"
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{ background: "linear-gradient(to top, rgba(26,15,46,0.90) 0%, transparent 50%)" }}
-                />
-                <div className="absolute bottom-0 left-0 right-0" style={{ padding: "1.25rem" }}>
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1rem", color: "#ffffff", marginBottom: "0.2rem" }}>Denise &amp; Laura</p>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "#C084A8", letterSpacing: "0.10em", textTransform: "uppercase" }}>Her Circle. Her Tribe.</p>
-                </div>
-              </div>
-            </AnimSection>
-
-            {/* Photo 3: Denise & Mom */}
-            <AnimSection>
-              <div
-                className="relative rounded-2xl overflow-hidden group"
-                style={{
-                  aspectRatio: "4/5",
-                  border: "2px solid rgba(192,132,168,0.30)",
-                  boxShadow: "0 0 40px rgba(192,132,168,0.15), 0 20px 50px rgba(0,0,0,0.70)",
-                }}
-              >
-                <img
-                  src={DENISE_MOM_URL}
-                  alt="Denise & Mom"
-                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", transition: "transform 0.5s ease" }}
-                  className="group-hover:scale-105"
-                />
-                <div
-                  className="absolute inset-0"
-                  style={{ background: "linear-gradient(to top, rgba(26,15,46,0.90) 0%, transparent 50%)" }}
-                />
-                <div className="absolute bottom-0 left-0 right-0" style={{ padding: "1.25rem" }}>
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1rem", color: "#ffffff", marginBottom: "0.2rem" }}>Denise &amp; Mom</p>
-                  <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "#C084A8", letterSpacing: "0.10em", textTransform: "uppercase" }}>Her Roots. Her Foundation.</p>
-                </div>
-              </div>
-            </AnimSection>
+              </AnimSection>
+            ))}
           </div>
 
           {/* Quote strip */}
