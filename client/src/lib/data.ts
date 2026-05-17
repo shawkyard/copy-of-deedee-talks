@@ -7,7 +7,7 @@ export const INSTAGRAM_URL = "https://www.instagram.com/denisedanberg/";
 export const FACEBOOK_URL = "https://www.facebook.com/p/By-Grit-Grace-61576960603203";
 export const LINKTREE_URL = "https://linktr.ee/bygritandgrace";
 
-export const LOGO_URL = "/manus-storage/deedee-logo-mark_b1ad0cd7.png";
+export const LOGO_URL = "/manus-storage/dd-logo-mark_235d647d.svg";
 export const HERO_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-bloom-CpBdbLNKnGYQiJ8pg84cXU.webp";
 export const PODCAST_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-plum-QvDSKRtJY2jogYqKpbZsZv.webp";
 export const SPEAKING_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-floral-Uh9nrWmVDZV2E3cGxX6uNz.webp";
@@ -15,9 +15,9 @@ export const MANIFESTO_BG_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663
 export const AUDIENCE_CROWD_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/hero-bg-light-RQeGSKZrSnZQ96X97ZL85Q.webp";
 
 // Denise personal photos
-export const DENISE_JASON_URL = "/manus-storage/denise-jason_57e84c52.jpg";
-export const DENISE_LAURA_URL = "/manus-storage/denise-laura_69e421d8.jpg";
-export const DENISE_MOM_URL = "/manus-storage/denise-mom_b53b5349.png";
+export const DENISE_JASON_URL = "/manus-storage/IMG_0358_188ea928.JPG";
+export const DENISE_LAURA_URL = "/manus-storage/IMG_0359(1)_6ae28988.JPG";
+export const DENISE_MOM_URL = "/manus-storage/IMG_0397(1)_7cce7e3c.PNG";
 
 // AI-generated professional portrait of Denise
 export const DENISE_PORTRAIT_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/YQjocCFgsRHmxQ7x85rn3n/denise-portrait-ai-dXyoRrQsZNzKvuzfJNGsS6.webp";
