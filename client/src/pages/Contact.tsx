@@ -25,7 +25,7 @@ export default function Contact() {
       <Navbar />
 
       {/* Hero */}
-      <section style={{ paddingTop: "80px", background: "#FAF7F5", padding: "7rem 0 4rem" }}>
+      <section style={{ background: "#FAF7F5", padding: "7rem 0 4rem", paddingTop: "7rem" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="dd-label-dark mb-4">Contact</p>
