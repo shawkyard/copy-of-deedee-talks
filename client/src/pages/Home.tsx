@@ -106,8 +106,9 @@ export default function Home() {
           }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24">
-          <div className="max-w-3xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -216,6 +217,83 @@ export default function Home() {
                 <button className="dd-btn-ghost">Book DD to Speak</button>
               </Link>
             </motion.div>
+          </div>
+
+          {/* Right: Podcast Studio Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 40, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
+            className="hidden lg:block relative"
+          >
+            <div
+              style={{
+                position: "relative",
+                borderRadius: "1.5rem",
+                overflow: "hidden",
+                boxShadow: "0 0 80px rgba(192,132,168,0.30), 0 30px 80px rgba(0,0,0,0.70), inset 0 0 0 1px rgba(192,132,168,0.25)",
+                border: "1.5px solid rgba(192,132,168,0.30)",
+              }}
+            >
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663573907938/oFkpQQQCGaFM3nrghAk97R/podcast-hero-studio-jtzLC927k53qSifaWD9f6D.webp"
+                alt="DD Talks Podcast Studio"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                  maxHeight: "600px",
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                }}
+              />
+              {/* Gradient blend at bottom */}
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  height: "40%",
+                  background: "linear-gradient(to top, rgba(26,15,46,0.85) 0%, transparent 100%)",
+                }}
+              />
+              {/* Floating badge */}
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "1.5rem",
+                  left: "1.5rem",
+                  background: "rgba(26,15,46,0.85)",
+                  backdropFilter: "blur(12px)",
+                  border: "1px solid rgba(192,132,168,0.35)",
+                  borderRadius: "0.75rem",
+                  padding: "0.75rem 1.1rem",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.6rem",
+                }}
+              >
+                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#C084A8", boxShadow: "0 0 8px #C084A8", animation: "pulse 2s infinite" }} />
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.90)", letterSpacing: "0.05em" }}>75+ Episodes &amp; Counting</span>
+              </div>
+              {/* Top-right badge */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: "1.25rem",
+                  right: "1.25rem",
+                  background: "linear-gradient(135deg, rgba(192,132,168,0.90), rgba(167,139,202,0.90))",
+                  backdropFilter: "blur(8px)",
+                  borderRadius: "2rem",
+                  padding: "0.45rem 1rem",
+                }}
+              >
+                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", fontWeight: 600, color: "#ffffff", letterSpacing: "0.12em", textTransform: "uppercase" }}>Now Streaming</span>
+              </div>
+            </div>
+          </motion.div>
+
           </div>
         </div>
 
