@@ -326,7 +326,7 @@ export default function Home() {
                   }}
                 >
                   <img
-                    src="/manus-storage/denise-dog_db6fa054.jpg"
+                    src="/manus-storage/denise-dog-hd_3996cb9b.png"
                     alt="Denise Danberg with her dog"
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
                   />
