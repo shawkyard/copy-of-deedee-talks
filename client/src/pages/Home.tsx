@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, Mic, Heart, Users, Star, ArrowRight, Instagram, Facebook, Play } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SectionDivider from "@/components/SectionDivider";
 import {
   HERO_BG_URL,
   PODCAST_BG_URL,
@@ -303,6 +304,8 @@ export default function Home() {
           <ChevronDown size={24} style={{ color: "rgba(192,132,168,0.60)" }} />
         </motion.div>
       </section>
+      {/* Divider: dark plum → cream */}
+      <SectionDivider fill="#FAF7F5" variant="petal" />
 
       {/* ── MEET DEEDEE ── */}
       <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
@@ -312,7 +315,7 @@ export default function Home() {
             <AnimSection>
               {/* Superstar photo stack */}
               <div className="relative" style={{ minHeight: 480 }}>
-                {/* Main photo — AI Portrait */}
+                {/* Main photo — Denise & her dog */}
                 <div
                   className="relative rounded-2xl overflow-hidden"
                   style={{
@@ -323,19 +326,19 @@ export default function Home() {
                   }}
                 >
                   <img
-                    src={DENISE_PORTRAIT_URL}
-                    alt="Denise Danberg — DD"
+                    src="/manus-storage/denise-dog_db6fa054.jpg"
+                    alt="Denise Danberg with her dog"
                     style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block" }}
                   />
                   <div
                     className="absolute inset-0"
-                    style={{ background: "linear-gradient(to top, rgba(26,15,46,0.85) 0%, transparent 55%)" }}
+                    style={{ background: "linear-gradient(to top, rgba(26,15,46,0.80) 0%, transparent 50%)" }}
                   />
                   <div className="absolute bottom-0 left-0 right-0" style={{ padding: "1.5rem" }}>
-                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.1rem", color: "#1A0F2E" }}>Denise Danberg</p>
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.70rem", color: "#C084A8", letterSpacing: "0.12em", textTransform: "uppercase" }}>DD — Host & Conversation Architect</p>
+                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.1rem", color: "#ffffff" }}>Denise & Her Pup</p>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.70rem", color: "#C084A8", letterSpacing: "0.12em", textTransform: "uppercase" }}>Real Life. Real Love.</p>
                   </div>
-                  {/* Superstar glow ring */}
+                  {/* Glow ring */}
                   <div
                     className="absolute inset-0 pointer-events-none"
                     style={{
@@ -469,6 +472,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Divider: cream → deep plum */}
+      <SectionDivider fill="#221540" variant="wave" flip />
 
       {/* ── WHY DD TALKS EXISTS ── */}
       <section style={{ background: "#221540", padding: "6rem 0" }}>
@@ -538,6 +543,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Divider: deep plum → podcast dark */}
+      <SectionDivider fill="#1A0F2E" variant="ripple" flip />
 
       {/* ── FEATURED PODCAST ── */}
       <section
@@ -676,6 +683,8 @@ export default function Home() {
           </AnimSection>
         </div>
       </section>
+      {/* Divider: dark → cream */}
+      <SectionDivider fill="#FAF7F5" variant="petal" />
 
       {/* ── CONVERSATION PILLARS ── */}
       <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
@@ -738,6 +747,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Divider: cream → deep plum */}
+      <SectionDivider fill="#221540" variant="wave" flip />
 
       {/* ── AUDIENCE PAGES GRID ── */}
       <section style={{ background: "#221540", padding: "6rem 0" }}>
@@ -816,6 +827,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Divider: deep plum → midnight */}
+      <SectionDivider fill="#1A0F2E" variant="ripple" flip />
 
       {/* ── SOCIAL HUB ── */}
       <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
@@ -895,6 +908,8 @@ export default function Home() {
           </AnimSection>
         </div>
       </section>
+      {/* Divider: midnight → speaking dark */}
+      <SectionDivider fill="rgba(26,15,46,0.95)" variant="wave" flip />
 
       {/* ── SPEAKING ── */}
       <section
@@ -1081,6 +1096,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Divider: speaking → manifesto */}
+      <SectionDivider fill="#1A0F2E" variant="petal" flip />
 
       {/* ── MANIFESTO ── */}
       <section
@@ -1144,6 +1161,8 @@ export default function Home() {
           </AnimSection>
         </div>
       </section>
+      {/* Divider: manifesto → spotlight */}
+      <SectionDivider fill="#1A0F2E" variant="ripple" />
 
       {/* ── SUPERSTAR PHOTO SPOTLIGHT ── */}
       <section
