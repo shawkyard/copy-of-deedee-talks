@@ -287,7 +287,7 @@ export default function Footer() {
           >
             © 2024–2026 DD Talks. All rights reserved. A Denise Danberg Brand.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-3">
             {["Privacy Policy", "Terms of Use"].map((label) => (
               <span
                 key={label}

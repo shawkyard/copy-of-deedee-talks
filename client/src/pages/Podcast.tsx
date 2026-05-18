@@ -18,7 +18,7 @@ export default function Podcast() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "55vh", display: "flex", alignItems: "center" }}>
+      <section className="relative overflow-hidden" style={{ paddingTop: "clamp(72px, 8vw, 80px)", minHeight: "clamp(260px, 40vh, 55vh)", display: "flex", alignItems: "center" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${PODCAST_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.65 }} />
         <div className="absolute inset-0" style={{ background: "rgba(26,15,46,0.80)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -102,7 +102,7 @@ export default function Podcast() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.04 }}
-                className="dd-episode-card p-6 flex flex-col"
+                className="dd-episode-card p-4 sm:p-6 flex flex-col"
               >
                 <div className="flex items-start justify-between mb-3">
                   <span className="dd-badge">{ep.category}</span>
@@ -116,7 +116,7 @@ export default function Podcast() {
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.80rem", color: "rgba(255,255,255,0.52)", lineHeight: 1.65, marginBottom: "1rem" }}>
                   {ep.description}
                 </p>
-                <div className="flex items-center justify-between mt-auto">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mt-auto gap-2">
                   <div>
                     <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "rgba(255,255,255,0.35)" }}>{ep.date}</p>
                     {ep.duration && <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "rgba(255,255,255,0.35)" }}>{ep.duration}</p>}

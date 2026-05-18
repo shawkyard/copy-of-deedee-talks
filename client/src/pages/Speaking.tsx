@@ -27,7 +27,7 @@ export default function Speaking() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "60vh", display: "flex", alignItems: "center" }}>
+      <section className="relative overflow-hidden" style={{ paddingTop: "clamp(72px, 8vw, 80px)", minHeight: "clamp(280px, 45vh, 60vh)", display: "flex", alignItems: "center" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${SPEAKING_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }} />
         <div className="absolute inset-0" style={{ background: "rgba(26,15,46,0.82)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -45,7 +45,7 @@ export default function Speaking() {
       </section>
 
       {/* What to expect */}
-      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="dd-label-dark mb-4">What to Expect</p>
@@ -59,9 +59,9 @@ export default function Speaking() {
               { title: "Warmth & Humor", body: "She brings the kind of energy that makes a room feel like a living room — safe, real, and alive. Your audience will leave feeling seen." },
               { title: "Faith-Filled Courage", body: "Every conversation Denise leads is grounded in faith, honesty, and the belief that real talk changes real lives." },
             ].map((c, i) => (
-              <div key={i} className="dd-glass-light p-8">
+              <div key={i} className="dd-glass-light p-5 sm:p-8">
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1.2rem", color: "#C084A8", marginBottom: "0.75rem" }}>{c.title}</h3>
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", color: "rgba(255,255,255,0.62)", lineHeight: 1.7 }}>{c.body}</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.9rem", color: "rgba(26,15,46,0.72)", lineHeight: 1.7 }}>{c.body}</p>
               </div>
             ))}
           </div>
@@ -69,7 +69,7 @@ export default function Speaking() {
       </section>
 
       {/* Topics */}
-      <section style={{ background: "#221540", padding: "6rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="dd-label mb-4">Speaking Topics</p>
@@ -92,7 +92,7 @@ export default function Speaking() {
       </section>
 
       {/* Inquiry form */}
-      <section style={{ background: "#1A0F2E", padding: "6rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Book DD</p>
@@ -100,7 +100,7 @@ export default function Speaking() {
               Submit a <span style={{ color: "#C084A8", fontStyle: "italic" }}>Speaking Inquiry</span>
             </h2>
           </div>
-          <div className="dd-glass p-8 md:p-10">
+          <div className="dd-glass p-5 sm:p-8 md:p-10">
             {submitted ? (
               <div className="text-center py-10">
                 <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>✅</div>
@@ -145,7 +145,7 @@ export default function Speaking() {
                 </div>
                 <div>
                   <label className="dd-label block mb-1.5" style={{ fontSize: "0.65rem" }}>Event Format</label>
-                  <div className="flex gap-4">
+                  <div className="flex flex-wrap gap-3">
                     {["In-Person", "Virtual", "Hybrid"].map((f) => (
                       <label key={f} style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.70)" }}>
                         <input type="radio" name="format" value={f} checked={form.format === f} onChange={() => setForm({ ...form, format: f })} style={{ accentColor: "#C084A8" }} />

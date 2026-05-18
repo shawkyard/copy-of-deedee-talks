@@ -35,7 +35,7 @@ export default function AudiencePage({ page }: Props) {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "65vh", display: "flex", alignItems: "center" }}>
+      <section className="relative overflow-hidden" style={{ paddingTop: "clamp(72px, 8vw, 80px)", minHeight: "clamp(300px, 50vh, 65vh)", display: "flex", alignItems: "center" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${bgUrl})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.35 }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(26,15,46,0.95) 0%, rgba(26,15,46,0.65) 100%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -76,7 +76,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Intro */}
-      <section style={{ background: "#FAF7F5", padding: "5rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
             <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", color: "rgba(26,15,46,0.72)", lineHeight: 1.85, textAlign: "center" }}>
@@ -87,7 +87,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Value props */}
-      <section style={{ background: "#221540", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Why DD Talks Is for You</p>
@@ -103,7 +103,7 @@ export default function AudiencePage({ page }: Props) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="dd-glass p-7"
+                className="dd-glass p-5 sm:p-7"
               >
                 <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.75rem" }}>
                   <div style={{ width: 28, height: 28, background: "rgba(192,132,168,0.12)", borderRadius: "6px", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
@@ -119,7 +119,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Manifesto teaser */}
-      <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-6">What DD Believes</p>
           <div className="space-y-3 mb-8">
@@ -136,7 +136,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Revolution teaser */}
-      <section style={{ background: "#221540", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-5">Something Big Is Coming</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(1.8rem, 4vw, 3rem)", color: "#ffffff", lineHeight: 1.15, marginBottom: "1.25rem" }}>
@@ -157,7 +157,7 @@ export default function AudiencePage({ page }: Props) {
       </section>
 
       {/* Other audiences */}
-      <section style={{ background: "#1A0F2E", padding: "4rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(2rem, 4vw, 4rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-4">Explore More</p>
           <div className="flex flex-wrap justify-center gap-3">

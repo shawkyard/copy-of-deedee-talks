@@ -12,7 +12,7 @@ export default function About() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "60vh", display: "flex", alignItems: "center" }}>
+      <section className="relative overflow-hidden" style={{ paddingTop: "clamp(72px, 8vw, 80px)", minHeight: "clamp(280px, 45vh, 60vh)", display: "flex", alignItems: "center" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${HERO_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center bottom", opacity: 0.55 }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(26,15,46,0.95) 40%, rgba(26,15,46,0.60) 100%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -29,7 +29,7 @@ export default function About() {
       </section>
 
       {/* Story */}
-      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             {/* Superstar photo stack */}
@@ -88,7 +88,7 @@ export default function About() {
       </section>
 
       {/* What drives her */}
-      <section style={{ background: "#221540", padding: "6rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="dd-label mb-4">What Drives Her</p>
@@ -102,7 +102,7 @@ export default function About() {
               { icon: <Star size={22} />, title: "Faith Is Not a Sunday-Only Experience", body: "Faith that only shows up on Sunday is not enough for the Monday through Saturday that actually happens. Denise brings faith into the everyday, the messy, and the real." },
               { icon: <Mic size={22} />, title: "Women Deserve More Than a Highlight Reel", body: "Social media has sold women a version of life that does not exist. DD Talks is the antidote — a space where the real story is the whole story." },
             ].map((c, i) => (
-              <div key={i} className="dd-glass p-8">
+              <div key={i} className="dd-glass p-5 sm:p-8">
                 <div className="dd-pillar-icon mb-5">{c.icon}</div>
                 <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600, fontSize: "1.1rem", color: "#ffffff", marginBottom: "0.75rem" }}>{c.title}</h3>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.88rem", color: "rgba(255,255,255,0.60)", lineHeight: 1.7 }}>{c.body}</p>
@@ -113,7 +113,7 @@ export default function About() {
       </section>
 
       {/* The platform */}
-      <section style={{ background: "#1A0F2E", padding: "6rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-5">The Platform</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#ffffff", marginBottom: "1.5rem" }}>
@@ -137,7 +137,7 @@ export default function About() {
       </section>
 
       {/* Manifesto teaser */}
-      <section style={{ background: "#221540", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="dd-label mb-6">What DD Believes</p>
           <div className="space-y-3">

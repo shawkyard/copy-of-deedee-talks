@@ -85,7 +85,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden"
-        style={{ paddingTop: "116px" }}
+        style={{ paddingTop: "clamp(80px, 10vw, 116px)" }}
       >
         <div
           className="absolute inset-0"
@@ -106,7 +106,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div>
+          <div className="text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -201,7 +201,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex flex-wrap gap-3"
+              className="flex flex-wrap gap-3 justify-center lg:justify-start"
             >
               <a href={APPLE_PODCASTS_URL} target="_blank" rel="noopener noreferrer">
                 <button className="dd-btn-primary flex items-center gap-2">
@@ -222,7 +222,7 @@ export default function Home() {
             initial={{ opacity: 0, x: 40, scale: 0.95 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.4, ease: "easeOut" }}
-            className="hidden lg:block relative"
+            className="block relative"
           >
             <div
               style={{
@@ -240,7 +240,7 @@ export default function Home() {
                   width: "100%",
                   height: "auto",
                   display: "block",
-                  maxHeight: "620px",
+                  maxHeight: "480px",
                   objectFit: "cover",
                   objectPosition: "center top",
                 }}
@@ -308,13 +308,13 @@ export default function Home() {
       <SectionDivider fill="#FAF7F5" variant="petal" />
 
       {/* ── MEET DEEDEE ── */}
-      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Denise portrait */}
             <AnimSection>
               {/* Superstar photo stack */}
-              <div className="relative" style={{ minHeight: 480 }}>
+              <div className="relative" style={{ minHeight: "auto" }}>
                 {/* Main photo — Denise & her dog */}
                 <div
                   className="relative rounded-2xl overflow-hidden"
@@ -350,7 +350,7 @@ export default function Home() {
                 </div>
                 {/* Floating badge — top-right */}
                 <div
-                  className="absolute -top-4 -right-4 rounded-2xl"
+                  className="absolute top-3 right-3 rounded-2xl"
                   style={{
                     background: "linear-gradient(135deg, rgba(192,132,168,0.92), rgba(167,139,202,0.92))",
                     backdropFilter: "blur(10px)",
@@ -367,7 +367,7 @@ export default function Home() {
                 </div>
                 {/* Floating badge — bottom-right */}
                 <div
-                  className="absolute -bottom-4 -right-4 rounded-2xl"
+                  className="absolute bottom-3 right-3 rounded-2xl"
                   style={{
                     background: "rgba(26,15,46,0.88)",
                     backdropFilter: "blur(10px)",
@@ -476,7 +476,7 @@ export default function Home() {
       <SectionDivider fill="#221540" variant="wave" flip />
 
       {/* ── WHY DD TALKS EXISTS ── */}
-      <section style={{ background: "#221540", padding: "6rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-14">
             <p className="dd-label mb-4">Why DD Talks Exists</p>
@@ -514,7 +514,7 @@ export default function Home() {
               },
             ].map((card, i) => (
               <AnimSection key={i}>
-                <div className="dd-glass p-8 h-full">
+                <div className="dd-glass p-5 sm:p-8 h-full">
                   <div className="dd-pillar-icon mb-5">{card.icon}</div>
                   <h3
                     style={{
@@ -549,7 +549,7 @@ export default function Home() {
       {/* ── FEATURED PODCAST ── */}
       <section
         className="relative overflow-hidden"
-        style={{ padding: "6rem 0" }}
+        style={{ padding: "clamp(3rem, 6vw, 6rem) 0" }}
       >
         <div
           className="absolute inset-0"
@@ -687,7 +687,7 @@ export default function Home() {
       <SectionDivider fill="#FAF7F5" variant="petal" />
 
       {/* ── CONVERSATION PILLARS ── */}
-      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-12">
             <p className="dd-label-dark mb-4">Conversation Pillars</p>
@@ -751,7 +751,7 @@ export default function Home() {
       <SectionDivider fill="#221540" variant="wave" flip />
 
       {/* ── AUDIENCE PAGES GRID ── */}
-      <section style={{ background: "#221540", padding: "6rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-12">
             <p className="dd-label mb-4">DD Talks to Everyone</p>
@@ -831,7 +831,7 @@ export default function Home() {
       <SectionDivider fill="#1A0F2E" variant="ripple" flip />
 
       {/* ── SOCIAL HUB ── */}
-      <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-10">
             <p className="dd-label mb-4">Follow the Conversation</p>
@@ -914,7 +914,7 @@ export default function Home() {
       {/* ── SPEAKING ── */}
       <section
         className="relative overflow-hidden"
-        style={{ padding: "6rem 0" }}
+        style={{ padding: "clamp(3rem, 6vw, 6rem) 0" }}
       >
         <div
           className="absolute inset-0"
@@ -1000,7 +1000,7 @@ export default function Home() {
 
             {/* Speaking inquiry form */}
             <AnimSection>
-              <div className="dd-glass p-8">
+              <div className="dd-glass p-5 sm:p-8">
                 <h3
                   style={{
                     fontFamily: "'Playfair Display', serif",
@@ -1102,7 +1102,7 @@ export default function Home() {
       {/* ── MANIFESTO ── */}
       <section
         className="relative overflow-hidden"
-        style={{ padding: "7rem 0" }}
+        style={{ padding: "clamp(3.5rem, 7vw, 7rem) 0" }}
       >
         <div
           className="absolute inset-0"
@@ -1167,7 +1167,7 @@ export default function Home() {
       {/* ── SUPERSTAR PHOTO SPOTLIGHT ── */}
       <section
         className="relative overflow-hidden"
-        style={{ padding: "6rem 0" }}
+        style={{ padding: "clamp(3rem, 6vw, 6rem) 0" }}
       >
         <div
           className="absolute inset-0"
@@ -1271,7 +1271,7 @@ export default function Home() {
       </section>
 
       {/* ── REVOLUTION TEASER ── */}
-      <section style={{ background: "#221540", padding: "5rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimSection>
             <p className="dd-label mb-5">Something Big Is Coming</p>
@@ -1324,7 +1324,7 @@ export default function Home() {
       <section
         id="mailing-list"
         className="relative overflow-hidden"
-        style={{ padding: "7rem 0" }}
+        style={{ padding: "clamp(3.5rem, 7vw, 7rem) 0" }}
       >
         {/* Decorative background */}
         <div
@@ -1425,7 +1425,7 @@ export default function Home() {
       {/* ── PRAYER CENTER ── */}
       <section
         className="relative overflow-hidden"
-        style={{ padding: "7rem 0", background: "#1A0F2E" }}
+        style={{ padding: "clamp(3.5rem, 7vw, 7rem) 0", background: "#1A0F2E" }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
@@ -1488,7 +1488,7 @@ export default function Home() {
             {/* Left: prayer promise */}
             <AnimSection>
               <div
-                className="dd-glass p-8 h-full"
+                className="dd-glass p-5 sm:p-8 h-full"
                 style={{ borderLeft: "3px solid #C084A8" }}
               >
                 <p
@@ -1541,7 +1541,7 @@ export default function Home() {
       </section>
 
       {/* ── PRIVATE CONTACT ── */}
-      <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-8">
             <p className="dd-label mb-4">A Private Word with DD</p>
@@ -1569,7 +1569,7 @@ export default function Home() {
             </p>
           </AnimSection>
           <AnimSection>
-            <div className="dd-glass p-8">
+            <div className="dd-glass p-5 sm:p-8">
               <PrivateContactForm />
             </div>
           </AnimSection>
@@ -1731,7 +1731,7 @@ function PrayerRequestForm() {
 
   if (submitted) {
     return (
-      <div className="dd-glass p-8 text-center">
+      <div className="dd-glass p-5 sm:p-8 text-center">
         <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>🙏</div>
         <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.3rem", color: "#ffffff", marginBottom: "0.5rem" }}>
           Prayer Received
@@ -1747,7 +1747,7 @@ function PrayerRequestForm() {
   }
 
   return (
-    <div className="dd-glass p-8">
+    <div className="dd-glass p-5 sm:p-8">
       <p
         style={{
           fontFamily: "'Playfair Display', serif",

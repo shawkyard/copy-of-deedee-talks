@@ -19,7 +19,7 @@ export default function Reflections() {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{ paddingTop: "80px", minHeight: "50vh", display: "flex", alignItems: "center" }}>
+      <section className="relative overflow-hidden" style={{ paddingTop: "clamp(72px, 8vw, 80px)", minHeight: "clamp(240px, 38vh, 50vh)", display: "flex", alignItems: "center" }}>
         <div className="absolute inset-0" style={{ backgroundImage: `url(${MANIFESTO_BG_URL})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.60 }} />
         <div className="absolute inset-0" style={{ background: "rgba(26,15,46,0.82)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

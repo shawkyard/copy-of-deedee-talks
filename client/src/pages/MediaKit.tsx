@@ -54,7 +54,7 @@ export default function MediaKit() {
           minHeight: "70vh",
           display: "flex",
           alignItems: "center",
-          paddingTop: "80px",
+          paddingTop: "clamp(72px, 8vw, 80px)",
           backgroundImage: `url(${SPEAKING_BG_URL})`,
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
@@ -156,7 +156,7 @@ export default function MediaKit() {
       </section>
 
       {/* ── BIO — magazine two-column ── */}
-      <section style={{ background: "#221540", padding: "6rem 0" }}>
+      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             {/* Bio text — 3 cols */}
@@ -244,7 +244,7 @@ export default function MediaKit() {
       </section>
 
       {/* ── TESTIMONIAL STRIP — cream ── */}
-      <section style={{ background: "#FAF7F5", padding: "5rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label-dark mb-3">What People Say</p>
@@ -275,7 +275,7 @@ export default function MediaKit() {
       </section>
 
       {/* ── TOPICS — plum ── */}
-      <section style={{ background: "#1A0F2E", padding: "5rem 0" }}>
+      <section style={{ background: "#1A0F2E", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="dd-label mb-4">Topics & Expertise</p>
@@ -302,7 +302,7 @@ export default function MediaKit() {
       </section>
 
       {/* ── FORMATS — cream, magazine card grid ── */}
-      <section style={{ background: "#FAF7F5", padding: "6rem 0" }}>
+      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="dd-label-dark mb-4">Available Formats</p>
@@ -343,7 +343,7 @@ export default function MediaKit() {
       <section
         style={{
           background: "linear-gradient(135deg, #2E1D52 0%, #1A0F2E 50%, #3D1F3A 100%)",
-          padding: "6rem 0",
+          padding: "clamp(3rem, 6vw, 6rem) 0",
           position: "relative",
           overflow: "hidden",
         }}

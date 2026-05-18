@@ -61,7 +61,7 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="dd-glass p-8 md:p-10">
+          <div className="dd-glass p-5 sm:p-8 md:p-10">
             {submitted ? (
               <div className="text-center py-10">
                 <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>{activeForm === "private" ? "🔒" : "✅"}</div>
@@ -100,7 +100,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <label className="dd-label block mb-1.5" style={{ fontSize: "0.65rem" }}>Event Format</label>
-                      <div className="flex gap-4">
+                      <div className="flex flex-wrap gap-3">
                         {["In-Person", "Virtual", "Hybrid"].map((f) => (
                           <label key={f} style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.70)" }}>
                             <input type="radio" name="format" value={f} checked={form.format === f} onChange={() => setForm({ ...form, format: f })} style={{ accentColor: "#C084A8" }} />

@@ -588,3 +588,83 @@
     );
   }
 }
+
+/* ============================================================
+   DD Talks — Mobile Responsiveness Overrides
+   Targets screens < 640px (sm breakpoint)
+   ============================================================ */
+
+@media (max-width: 639px) {
+  /* Ticker tape — smaller on very narrow screens */
+  .ticker-tape-bar {
+    height: 32px !important;
+  }
+
+  /* Buttons — full width on mobile for easier tapping */
+  .dd-btn-primary,
+  .dd-btn-ghost {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Episode cards — stack bottom row on mobile */
+  .dd-episode-card .episode-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Navbar — ensure mobile menu items are large enough to tap */
+  .dd-nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  /* Prevent horizontal overflow on all pages */
+  body, #root {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Glassmorphism cards — reduce border-radius on mobile */
+  .dd-glass,
+  .dd-glass-light {
+    border-radius: 12px;
+  }
+
+  /* Section dividers — reduce height on mobile */
+  .dd-section-divider svg {
+    height: 40px;
+  }
+
+  /* Hero title — ensure it doesn't overflow on very small screens */
+  h1 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Forms — ensure inputs are large enough to tap */
+  .dd-input,
+  .dd-input-light {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    padding: 0.875rem 1rem;
+  }
+
+  /* Reduce ticker fade mask width on mobile */
+  .ticker-fade-left,
+  .ticker-fade-right {
+    width: 30px !important;
+  }
+}
+
+/* Ensure images never overflow their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent absolute-positioned decorative elements from causing horizontal scroll */
+.overflow-hidden {
+  overflow: hidden;
+}
