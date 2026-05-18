@@ -87,15 +87,27 @@ export default function Home() {
         className="relative min-h-screen flex items-center overflow-hidden"
         style={{ paddingTop: "clamp(80px, 10vw, 116px)" }}
       >
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url(${HERO_BG_URL})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center bottom",
-            opacity: 0.75,
-          }}
-        />
+        {/* Hero background video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ opacity: 0.55 }}
+        >
+          <source src="/manus-storage/podcast-studio-bg_b08d6822.mov" type="video/mp4" />
+          {/* Fallback to static image if video fails */}
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${HERO_BG_URL})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center bottom",
+              opacity: 0.75,
+            }}
+          />
+        </video>
         <div
           className="absolute inset-0"
           style={{
