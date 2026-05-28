@@ -238,6 +238,7 @@ export const PILLARS = [
 ];
 
 export const MANIFESTO_LINES = [
+  "I believe in the power of Jesus Christ.",
   "I believe in conversations that cost something.",
   "I believe in faith that holds even when it shakes.",
   "I believe in friendships that tell you the truth.",
