@@ -1,5 +1,5 @@
 // DD Talks — Home Page
-// Feminine Bloom theme: deep plum/cream alternating, dusty rose/lavender/blue accents
+// Earthy Horizon theme: deep forest/ivory alternating, sky blue/sage/tan accents
 // Sections: Hero, About, Why DD Talks, Podcast, Pillars, Episodes, Social, Speaking, Manifesto, Contact, Footer
 
 import { useState, useEffect, useRef } from "react";
@@ -79,7 +79,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ background: "#1A0F2E", minHeight: "100vh" }}>
+    <div style={{ background: "#1E2E20", minHeight: "100vh" }}>
       <Navbar />
 
       {/* ── HERO ── */}
@@ -112,7 +112,7 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(160deg, rgba(26,15,46,0.88) 0%, rgba(46,29,82,0.55) 50%, rgba(26,15,46,0.80) 100%)",
+              "linear-gradient(160deg, rgba(30, 46, 32,0.88) 0%, rgba(46, 66, 50,0.55) 50%, rgba(30, 46, 32,0.80) 100%)",
           }}
         />
 
@@ -142,7 +142,7 @@ export default function Home() {
               }}
             >
               Real Conversations.{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                 Faith-Filled
               </span>{" "}
               Courage.
@@ -160,7 +160,7 @@ export default function Home() {
                 marginBottom: "1.2rem",
               }}
             >
-              <span style={{ color: "rgba(192,132,168,0.55)", fontSize: "0.55rem", letterSpacing: "0.3em" }}>✦ ✦ ✦</span>
+              <span style={{ color: "rgba(123, 167, 188,0.55)", fontSize: "0.55rem", letterSpacing: "0.3em" }}>✦ ✦ ✦</span>
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
@@ -173,7 +173,7 @@ export default function Home() {
               >
                 Grace for the Messy Middle
               </span>
-              <span style={{ color: "rgba(192,132,168,0.55)", fontSize: "0.55rem", letterSpacing: "0.3em" }}>✦ ✦ ✦</span>
+              <span style={{ color: "rgba(123, 167, 188,0.55)", fontSize: "0.55rem", letterSpacing: "0.3em" }}>✦ ✦ ✦</span>
             </motion.div>
 
             <motion.p
@@ -193,12 +193,12 @@ export default function Home() {
                 style={{
                   fontFamily: "'Great Vibes', cursive",
                   fontSize: "clamp(1.6rem, 3vw, 2.1rem)",
-                  color: "#C084A8",
+                  color: "#7BA7BC",
                   display: "inline",
                   lineHeight: 1,
                   verticalAlign: "middle",
                   marginRight: "0.15em",
-                  textShadow: "0 0 30px rgba(192,132,168,0.35)",
+                  textShadow: "0 0 30px rgba(123, 167, 188,0.35)",
                 }}
               >
                 DD Talks
@@ -241,8 +241,8 @@ export default function Home() {
                 position: "relative",
                 borderRadius: "1.5rem",
                 overflow: "hidden",
-                boxShadow: "0 0 80px rgba(192,132,168,0.30), 0 30px 80px rgba(0,0,0,0.70), inset 0 0 0 1px rgba(192,132,168,0.25)",
-                border: "1.5px solid rgba(192,132,168,0.30)",
+                boxShadow: "0 0 80px rgba(123, 167, 188,0.30), 0 30px 80px rgba(0,0,0,0.70), inset 0 0 0 1px rgba(123, 167, 188,0.25)",
+                border: "1.5px solid rgba(123, 167, 188,0.30)",
               }}
             >
               <img
@@ -265,7 +265,7 @@ export default function Home() {
                   left: 0,
                   right: 0,
                   height: "40%",
-                  background: "linear-gradient(to top, rgba(26,15,46,0.85) 0%, transparent 100%)",
+                  background: "linear-gradient(to top, rgba(30, 46, 32,0.85) 0%, transparent 100%)",
                 }}
               />
               {/* Floating badge */}
@@ -274,9 +274,9 @@ export default function Home() {
                   position: "absolute",
                   bottom: "1.5rem",
                   left: "1.5rem",
-                  background: "rgba(26,15,46,0.85)",
+                  background: "rgba(30, 46, 32,0.85)",
                   backdropFilter: "blur(12px)",
-                  border: "1px solid rgba(192,132,168,0.35)",
+                  border: "1px solid rgba(123, 167, 188,0.35)",
                   borderRadius: "0.75rem",
                   padding: "0.75rem 1.1rem",
                   display: "flex",
@@ -284,7 +284,7 @@ export default function Home() {
                   gap: "0.6rem",
                 }}
               >
-                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#C084A8", boxShadow: "0 0 8px #C084A8", animation: "pulse 2s infinite" }} />
+                <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#7BA7BC", boxShadow: "0 0 8px #7BA7BC", animation: "pulse 2s infinite" }} />
                 <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.78rem", color: "rgba(255,255,255,0.90)", letterSpacing: "0.05em" }}>75+ Episodes &amp; Counting</span>
               </div>
               {/* Top-right badge */}
@@ -293,7 +293,7 @@ export default function Home() {
                   position: "absolute",
                   top: "1.25rem",
                   right: "1.25rem",
-                  background: "linear-gradient(135deg, rgba(192,132,168,0.90), rgba(167,139,202,0.90))",
+                  background: "linear-gradient(135deg, rgba(123, 167, 188,0.90), rgba(143, 181, 160,0.90))",
                   backdropFilter: "blur(8px)",
                   borderRadius: "2rem",
                   padding: "0.45rem 1rem",
@@ -313,14 +313,14 @@ export default function Home() {
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <ChevronDown size={24} style={{ color: "rgba(192,132,168,0.60)" }} />
+          <ChevronDown size={24} style={{ color: "rgba(123, 167, 188,0.60)" }} />
         </motion.div>
       </section>
       {/* Divider: dark plum → cream */}
-      <SectionDivider fill="#FAF7F5" variant="petal" />
+      <SectionDivider fill="#F5F0E8" variant="petal" />
 
       {/* ── MEET DEEDEE ── */}
-      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
+      <section style={{ background: "#F5F0E8", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left: Denise portrait */}
@@ -332,9 +332,9 @@ export default function Home() {
                   className="relative rounded-2xl overflow-hidden"
                   style={{
                     aspectRatio: "4/5",
-                    background: "#2E1D52",
-                    border: "2px solid rgba(192,132,168,0.35)",
-                    boxShadow: "0 0 60px rgba(192,132,168,0.18), 0 20px 60px rgba(0,0,0,0.7)",
+                    background: "#2E4232",
+                    border: "2px solid rgba(123, 167, 188,0.35)",
+                    boxShadow: "0 0 60px rgba(123, 167, 188,0.18), 0 20px 60px rgba(0,0,0,0.7)",
                   }}
                 >
                   <img
@@ -344,19 +344,19 @@ export default function Home() {
                   />
                   <div
                     className="absolute inset-0"
-                    style={{ background: "linear-gradient(to top, rgba(26,15,46,0.80) 0%, transparent 50%)" }}
+                    style={{ background: "linear-gradient(to top, rgba(30, 46, 32,0.80) 0%, transparent 50%)" }}
                   />
                   <div className="absolute bottom-0 left-0 right-0" style={{ padding: "1.5rem" }}>
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: "1.1rem", color: "#ffffff" }}>Denise & Her Pup</p>
-                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.70rem", color: "#C084A8", letterSpacing: "0.12em", textTransform: "uppercase" }}>Real Life. Real Love.</p>
+                    <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.70rem", color: "#7BA7BC", letterSpacing: "0.12em", textTransform: "uppercase" }}>Real Life. Real Love.</p>
                   </div>
                   {/* Glow ring */}
                   <div
                     className="absolute inset-0 pointer-events-none"
                     style={{
-                      border: "1px solid rgba(192,132,168,0.20)",
+                      border: "1px solid rgba(123, 167, 188,0.20)",
                       borderRadius: "inherit",
-                      boxShadow: "inset 0 0 40px rgba(192,132,168,0.08)",
+                      boxShadow: "inset 0 0 40px rgba(123, 167, 188,0.08)",
                     }}
                   />
                 </div>
@@ -364,10 +364,10 @@ export default function Home() {
                 <div
                   className="absolute top-3 right-3 rounded-2xl"
                   style={{
-                    background: "linear-gradient(135deg, rgba(192,132,168,0.92), rgba(167,139,202,0.92))",
+                    background: "linear-gradient(135deg, rgba(123, 167, 188,0.92), rgba(143, 181, 160,0.92))",
                     backdropFilter: "blur(10px)",
                     border: "1px solid rgba(255,255,255,0.25)",
-                    boxShadow: "0 8px 32px rgba(192,132,168,0.40)",
+                    boxShadow: "0 8px 32px rgba(123, 167, 188,0.40)",
                     padding: "0.9rem 1.1rem",
                     zIndex: 10,
                     textAlign: "center",
@@ -381,9 +381,9 @@ export default function Home() {
                 <div
                   className="absolute bottom-3 right-3 rounded-2xl"
                   style={{
-                    background: "rgba(26,15,46,0.88)",
+                    background: "rgba(30, 46, 32,0.88)",
                     backdropFilter: "blur(10px)",
-                    border: "1px solid rgba(192,132,168,0.40)",
+                    border: "1px solid rgba(123, 167, 188,0.40)",
                     boxShadow: "0 8px 32px rgba(0,0,0,0.50)",
                     padding: "0.9rem 1.1rem",
                     zIndex: 10,
@@ -391,7 +391,7 @@ export default function Home() {
                     minWidth: 120,
                   }}
                 >
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "0.85rem", color: "#C084A8", lineHeight: 1.3, margin: 0 }}>Faith-Filled</p>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontSize: "0.85rem", color: "#7BA7BC", lineHeight: 1.3, margin: 0 }}>Faith-Filled</p>
                   <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.65rem", color: "rgba(255,255,255,0.70)", letterSpacing: "0.12em", textTransform: "uppercase", marginTop: "0.25rem" }}>Courage</p>
                 </div>
               </div>
@@ -406,13 +406,13 @@ export default function Home() {
                     fontFamily: "'Playfair Display', serif",
                     fontWeight: 700,
                     fontSize: "clamp(2rem, 4vw, 3rem)",
-                    color: "#1A0F2E",
+                    color: "#1E2E20",
                     lineHeight: 1.2,
                     marginBottom: "1.5rem",
                   }}
                 >
                   She Shows Up.{" "}
-                  <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+                  <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                     She Speaks Truth.
                   </span>{" "}
                   She Brings You In.
@@ -421,7 +421,7 @@ export default function Home() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "1rem",
-                    color: "rgba(26,15,46,0.72)",
+                    color: "rgba(30, 46, 32,0.72)",
                     lineHeight: 1.8,
                     marginBottom: "1.25rem",
                   }}
@@ -437,13 +437,13 @@ export default function Home() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "1rem",
-                    color: "rgba(26,15,46,0.72)",
+                    color: "rgba(30, 46, 32,0.72)",
                     lineHeight: 1.8,
                     marginBottom: "2rem",
                   }}
                 >
                   Whether she is co-hosting{" "}
-                  <em style={{ color: "#C084A8" }}>By Grit and Grace</em> with
+                  <em style={{ color: "#7BA7BC" }}>By Grit and Grace</em> with
                   her friend Heather, stepping onto a stage, or sitting across
                   from someone who just needs to be heard, Denise brings the same
                   thing every time: faith-filled courage, genuine warmth, and the
@@ -451,13 +451,13 @@ export default function Home() {
                 </p>
                 <blockquote
                   style={{
-                    borderLeft: "3px solid #C084A8",
+                    borderLeft: "3px solid #7BA7BC",
                     paddingLeft: "1.25rem",
                     marginBottom: "2rem",
                     fontFamily: "'Playfair Display', serif",
                     fontStyle: "italic",
                     fontSize: "1.05rem",
-                    color: "rgba(26,15,46,0.80)",
+                    color: "rgba(30, 46, 32,0.80)",
                   }}
                 >
                   "We are on a quest to uncover the extraordinary in every day."
@@ -467,7 +467,7 @@ export default function Home() {
                       fontFamily: "'DM Sans', sans-serif",
                       fontStyle: "normal",
                       fontSize: "0.78rem",
-                      color: "#C084A8",
+                      color: "#7BA7BC",
                       letterSpacing: "0.08em",
                     }}
                   >
@@ -485,10 +485,10 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: cream → deep plum */}
-      <SectionDivider fill="#221540" variant="wave" flip />
+      <SectionDivider fill="#243527" variant="wave" flip />
 
       {/* ── WHY DD TALKS EXISTS ── */}
-      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
+      <section style={{ background: "#243527", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-14">
             <p className="dd-label mb-4">Why DD Talks Exists</p>
@@ -501,7 +501,7 @@ export default function Home() {
               }}
             >
               This Is Not a{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                 Highlight Reel.
               </span>
             </h2>
@@ -556,7 +556,7 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: deep plum → podcast dark */}
-      <SectionDivider fill="#1A0F2E" variant="ripple" flip />
+      <SectionDivider fill="#1E2E20" variant="ripple" flip />
 
       {/* ── FEATURED PODCAST ── */}
       <section
@@ -574,7 +574,7 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(26,15,46,0.80)" }}
+          style={{ background: "rgba(30, 46, 32,0.80)" }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-12">
@@ -589,7 +589,7 @@ export default function Home() {
               }}
             >
               By Grit &amp; Grace —{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                 We Are Warriors
               </span>
             </h2>
@@ -676,7 +676,7 @@ export default function Home() {
                       href={ep.appleUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ color: "#C084A8", fontSize: "0.72rem", fontFamily: "'DM Sans', sans-serif" }}
+                      style={{ color: "#7BA7BC", fontSize: "0.72rem", fontFamily: "'DM Sans', sans-serif" }}
                     >
                       Listen →
                     </a>
@@ -696,10 +696,10 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: dark → cream */}
-      <SectionDivider fill="#FAF7F5" variant="petal" />
+      <SectionDivider fill="#F5F0E8" variant="petal" />
 
       {/* ── CONVERSATION PILLARS ── */}
-      <section style={{ background: "#FAF7F5", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
+      <section style={{ background: "#F5F0E8", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-12">
             <p className="dd-label-dark mb-4">Conversation Pillars</p>
@@ -708,11 +708,11 @@ export default function Home() {
                 fontFamily: "'Playfair Display', serif",
                 fontWeight: 700,
                 fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
-                color: "#1A0F2E",
+                color: "#1E2E20",
               }}
             >
               What{" "}
-              <span style={{ color: "#A8628A", fontStyle: "italic" }}>
+              <span style={{ color: "#5A8A9F", fontStyle: "italic" }}>
                 DD
               </span>{" "}
               Talks About
@@ -736,7 +736,7 @@ export default function Home() {
                       fontFamily: "'Playfair Display', serif",
                       fontWeight: 600,
                       fontSize: "0.9rem",
-                      color: "#1A0F2E",
+                      color: "#1E2E20",
                       marginBottom: "0.5rem",
                       lineHeight: 1.3,
                     }}
@@ -747,7 +747,7 @@ export default function Home() {
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
                       fontSize: "0.75rem",
-                      color: "rgba(26,15,46,0.50)",
+                      color: "rgba(30, 46, 32,0.50)",
                       lineHeight: 1.6,
                     }}
                   >
@@ -760,10 +760,10 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: cream → deep plum */}
-      <SectionDivider fill="#221540" variant="wave" flip />
+      <SectionDivider fill="#243527" variant="wave" flip />
 
       {/* ── AUDIENCE PAGES GRID ── */}
-      <section style={{ background: "#221540", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
+      <section style={{ background: "#243527", padding: "clamp(3rem, 6vw, 6rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-12">
             <p className="dd-label mb-4">DD Talks to Everyone</p>
@@ -776,7 +776,7 @@ export default function Home() {
               }}
             >
               Find Your{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                 Space
               </span>
             </h2>
@@ -825,7 +825,7 @@ export default function Home() {
                       style={{
                         fontFamily: "'DM Sans', sans-serif",
                         fontSize: "0.72rem",
-                        color: "#C084A8",
+                        color: "#7BA7BC",
                         fontWeight: 600,
                         letterSpacing: "0.05em",
                       }}
@@ -840,10 +840,10 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: deep plum → midnight */}
-      <SectionDivider fill="#1A0F2E" variant="ripple" flip />
+      <SectionDivider fill="#1E2E20" variant="ripple" flip />
 
       {/* ── SOCIAL HUB ── */}
-      <section style={{ background: "#1A0F2E", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
+      <section style={{ background: "#1E2E20", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-10">
             <p className="dd-label mb-4">Follow the Conversation</p>
@@ -856,7 +856,7 @@ export default function Home() {
               }}
             >
               Stay Connected with{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                 DD
               </span>
             </h2>
@@ -921,7 +921,7 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: midnight → speaking dark */}
-      <SectionDivider fill="rgba(26,15,46,0.95)" variant="wave" flip />
+      <SectionDivider fill="rgba(30, 46, 32,0.95)" variant="wave" flip />
 
       {/* ── SPEAKING ── */}
       <section
@@ -939,7 +939,7 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(26,15,46,0.82)" }}
+          style={{ background: "rgba(30, 46, 32,0.82)" }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -957,7 +957,7 @@ export default function Home() {
                   }}
                 >
                   Bring DD Into{" "}
-                  <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+                  <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                     the Conversation
                   </span>
                 </h2>
@@ -988,7 +988,7 @@ export default function Home() {
                           fontFamily: "'Playfair Display', serif",
                           fontWeight: 600,
                           fontSize: "0.9rem",
-                          color: "#C084A8",
+                          color: "#7BA7BC",
                           marginBottom: "0.4rem",
                         }}
                       >
@@ -1109,7 +1109,7 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: speaking → manifesto */}
-      <SectionDivider fill="#1A0F2E" variant="petal" flip />
+      <SectionDivider fill="#1E2E20" variant="petal" flip />
 
       {/* ── MANIFESTO ── */}
       <section
@@ -1127,7 +1127,7 @@ export default function Home() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(26,15,46,0.78)" }}
+          style={{ background: "rgba(30, 46, 32,0.78)" }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimSection>
@@ -1144,7 +1144,7 @@ export default function Home() {
                     fontFamily: "'Playfair Display', serif",
                     fontStyle: "italic",
                     fontSize: "clamp(1rem, 2.2vw, 1.35rem)",
-                    color: i === MANIFESTO_LINES.length - 1 ? "#C084A8" : "rgba(255,255,255,0.88)",
+                    color: i === MANIFESTO_LINES.length - 1 ? "#7BA7BC" : "rgba(255,255,255,0.88)",
                     lineHeight: 1.5,
                     fontWeight: i === MANIFESTO_LINES.length - 1 ? 700 : 400,
                   }}
@@ -1164,7 +1164,7 @@ export default function Home() {
                 }}
               >
                 This is{" "}
-                <span style={{ color: "#C084A8" }}>DD Talks.</span>
+                <span style={{ color: "#7BA7BC" }}>DD Talks.</span>
               </p>
               <Link href="/contact">
                 <button className="dd-btn-primary">Join the Conversation</button>
@@ -1174,7 +1174,7 @@ export default function Home() {
         </div>
       </section>
       {/* Divider: manifesto → spotlight */}
-      <SectionDivider fill="#1A0F2E" variant="ripple" />
+      <SectionDivider fill="#1E2E20" variant="ripple" />
 
       {/* ── SUPERSTAR PHOTO SPOTLIGHT ── */}
       <section
@@ -1190,7 +1190,7 @@ export default function Home() {
             opacity: 0.25,
           }}
         />
-        <div className="absolute inset-0" style={{ background: "rgba(26,15,46,0.88)" }} />
+        <div className="absolute inset-0" style={{ background: "rgba(30, 46, 32,0.88)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-12">
             <p className="dd-label mb-4">The Woman Behind the Voice</p>
@@ -1204,7 +1204,7 @@ export default function Home() {
               }}
             >
               Faith.{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>Family.</span>{" "}
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>Family.</span>{" "}
               Fire.
             </h2>
             <p
@@ -1233,14 +1233,14 @@ export default function Home() {
                   className="relative rounded-2xl"
                   style={{
                     padding: "2.5rem 2rem",
-                    background: i === 1 ? "linear-gradient(135deg, rgba(192,132,168,0.18), rgba(167,139,202,0.12))" : "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(192,132,168,0.25)",
-                    boxShadow: "0 0 40px rgba(192,132,168,0.08), 0 20px 50px rgba(0,0,0,0.40)",
+                    background: i === 1 ? "linear-gradient(135deg, rgba(123, 167, 188,0.18), rgba(143, 181, 160,0.12))" : "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(123, 167, 188,0.25)",
+                    boxShadow: "0 0 40px rgba(123, 167, 188,0.08), 0 20px 50px rgba(0,0,0,0.40)",
                     marginTop: i === 1 ? "2rem" : "0",
                     textAlign: "center",
                   }}
                 >
-                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontWeight: 700, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#C084A8", marginBottom: "0.25rem" }}>{item.number}</p>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", fontWeight: 700, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#7BA7BC", marginBottom: "0.25rem" }}>{item.number}</p>
                   <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.68rem", color: "rgba(255,255,255,0.55)", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "1.25rem" }}>{item.label}</p>
                   <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.95rem", color: "rgba(255,255,255,0.72)", lineHeight: 1.7 }}>{item.desc}</p>
                 </div>
@@ -1268,7 +1268,7 @@ export default function Home() {
                   fontFamily: "'DM Sans', sans-serif",
                   fontStyle: "normal",
                   fontSize: "0.75rem",
-                  color: "#C084A8",
+                  color: "#7BA7BC",
                   letterSpacing: "0.10em",
                   textTransform: "uppercase",
                   display: "block",
@@ -1283,7 +1283,7 @@ export default function Home() {
       </section>
 
       {/* ── REVOLUTION TEASER ── */}
-      <section style={{ background: "#221540", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
+      <section style={{ background: "#243527", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimSection>
             <p className="dd-label mb-5">Something Big Is Coming</p>
@@ -1298,7 +1298,7 @@ export default function Home() {
               }}
             >
               The{" "}
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>
                 Revolution
               </span>{" "}
               Starts Here.
@@ -1342,7 +1342,7 @@ export default function Home() {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(135deg, #1A0F2E 0%, #2E1D52 50%, #1A0F2E 100%)",
+            background: "linear-gradient(135deg, #1E2E20 0%, #2E4232 50%, #1E2E20 100%)",
           }}
         />
         {/* Soft rose glow orb */}
@@ -1352,7 +1352,7 @@ export default function Home() {
             width: 600,
             height: 600,
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(192,132,168,0.08) 0%, transparent 70%)",
+            background: "radial-gradient(circle, rgba(123, 167, 188,0.08) 0%, transparent 70%)",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
@@ -1363,24 +1363,24 @@ export default function Home() {
             <div
               className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full"
               style={{
-                background: "rgba(192,132,168,0.10)",
-                border: "1px solid rgba(192,132,168,0.25)",
+                background: "rgba(123, 167, 188,0.10)",
+                border: "1px solid rgba(123, 167, 188,0.25)",
               }}
             >
-              <span style={{ color: "#C084A8", fontSize: "0.55rem" }}>✦</span>
+              <span style={{ color: "#7BA7BC", fontSize: "0.55rem" }}>✦</span>
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
                   fontSize: "0.65rem",
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "#C084A8",
+                  color: "#7BA7BC",
                   fontWeight: 700,
                 }}
               >
                 Join the DD Talks Community
               </span>
-              <span style={{ color: "#C084A8", fontSize: "0.55rem" }}>✦</span>
+              <span style={{ color: "#7BA7BC", fontSize: "0.55rem" }}>✦</span>
             </div>
             <h2
               style={{
@@ -1394,7 +1394,7 @@ export default function Home() {
             >
               Be the First to Know.
               <br />
-              <span style={{ color: "#C084A8", fontStyle: "italic" }}>Blessings in Your Inbox.</span>
+              <span style={{ color: "#7BA7BC", fontStyle: "italic" }}>Blessings in Your Inbox.</span>
             </h2>
             <p
               style={{
@@ -1437,12 +1437,12 @@ export default function Home() {
       {/* ── PRAYER CENTER ── */}
       <section
         className="relative overflow-hidden"
-        style={{ padding: "clamp(3.5rem, 7vw, 7rem) 0", background: "#1A0F2E" }}
+        style={{ padding: "clamp(3.5rem, 7vw, 7rem) 0", background: "#1E2E20" }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: "radial-gradient(ellipse at center, rgba(192,132,168,0.05) 0%, transparent 65%)",
+            background: "radial-gradient(ellipse at center, rgba(123, 167, 188,0.05) 0%, transparent 65%)",
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1450,24 +1450,24 @@ export default function Home() {
             <div
               className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full"
               style={{
-                background: "rgba(192,132,168,0.10)",
-                border: "1px solid rgba(192,132,168,0.25)",
+                background: "rgba(123, 167, 188,0.10)",
+                border: "1px solid rgba(123, 167, 188,0.25)",
               }}
             >
-              <span style={{ color: "#C084A8", fontSize: "0.55rem" }}>✦</span>
+              <span style={{ color: "#7BA7BC", fontSize: "0.55rem" }}>✦</span>
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
                   fontSize: "0.65rem",
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "#C084A8",
+                  color: "#7BA7BC",
                   fontWeight: 700,
                 }}
               >
                 Prayer Center
               </span>
-              <span style={{ color: "#C084A8", fontSize: "0.55rem" }}>✦</span>
+              <span style={{ color: "#7BA7BC", fontSize: "0.55rem" }}>✦</span>
             </div>
             <h2
               style={{
@@ -1501,7 +1501,7 @@ export default function Home() {
             <AnimSection>
               <div
                 className="dd-glass p-5 sm:p-8 h-full"
-                style={{ borderLeft: "3px solid #C084A8" }}
+                style={{ borderLeft: "3px solid #7BA7BC" }}
               >
                 <p
                   style={{
@@ -1520,7 +1520,7 @@ export default function Home() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "0.72rem",
-                    color: "#C084A8",
+                    color: "#7BA7BC",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
                     marginBottom: "2rem",
@@ -1553,7 +1553,7 @@ export default function Home() {
       </section>
 
       {/* ── PRIVATE CONTACT ── */}
-      <section style={{ background: "#1A0F2E", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
+      <section style={{ background: "#1E2E20", padding: "clamp(2.5rem, 5vw, 5rem) 0" }}>
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-8">
             <p className="dd-label mb-4">A Private Word with DD</p>
@@ -1707,13 +1707,13 @@ function MailingListForm() {
                 fontSize: "0.72rem",
                 letterSpacing: "0.04em",
                 background: data.interests.includes(interest)
-                  ? "rgba(192,132,168,0.20)"
+                  ? "rgba(123, 167, 188,0.20)"
                   : "rgba(255,255,255,0.05)",
                 border: data.interests.includes(interest)
-                  ? "1px solid rgba(192,132,168,0.60)"
+                  ? "1px solid rgba(123, 167, 188,0.60)"
                   : "1px solid rgba(255,255,255,0.12)",
                 color: data.interests.includes(interest)
-                  ? "#C084A8"
+                  ? "#7BA7BC"
                   : "rgba(255,255,255,0.60)",
               }}
             >
@@ -1751,7 +1751,7 @@ function PrayerRequestForm() {
         <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.85rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.7 }}>
           Denise will personally lift your request in prayer. You are covered. You are not alone.
         </p>
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "#C084A8", marginTop: "1rem", letterSpacing: "0.08em" }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "#7BA7BC", marginTop: "1rem", letterSpacing: "0.08em" }}>
           — By Grit &amp; Grace, We Are Warriors
         </p>
       </div>
@@ -1820,7 +1820,7 @@ function PrayerRequestForm() {
             id="anonymous"
             checked={data.anonymous}
             onChange={(e) => setData({ ...data, anonymous: e.target.checked })}
-            style={{ accentColor: "#C084A8", width: "14px", height: "14px" }}
+            style={{ accentColor: "#7BA7BC", width: "14px", height: "14px" }}
           />
           <label
             htmlFor="anonymous"

@@ -1,5 +1,5 @@
 // DD Talks — Footer Component
-// Feminine Bloom theme: deep plum, dusty rose/blush accents
+// Earthy Horizon theme: deep forest green, sky blue/tan/sage accents
 
 import { Link } from "wouter";
 import { Instagram, Facebook } from "lucide-react";
@@ -36,8 +36,8 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "#100820",
-        borderTop: "1px solid rgba(192,132,168,0.18)",
+        background: "#1E2E20",
+        borderTop: "1px solid rgba(123, 167, 188,0.18)",
       }}
     >
       {/* Top section */}
@@ -55,7 +55,7 @@ export default function Footer() {
                       fontSize: "1.75rem",
                       color: "#ffffff",
                       lineHeight: 1,
-                      textShadow: "0 0 18px rgba(192,132,168,0.35)",
+                      textShadow: "0 0 18px rgba(123, 167, 188,0.35)",
                     }}
                   >
                     DD
@@ -65,7 +65,7 @@ export default function Footer() {
                       fontFamily: "'DM Sans', sans-serif",
                       fontWeight: 600,
                       fontSize: "0.85rem",
-                      color: "#E8B4D0",
+                      color: "#D4C4A8",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       marginLeft: "0.15em",
@@ -164,7 +164,7 @@ export default function Footer() {
                       transition: "color 0.2s",
                     }}
                     onMouseEnter={(e) =>
-                      ((e.target as HTMLElement).style.color = "#E8B4D0")
+                      ((e.target as HTMLElement).style.color = "#D4C4A8")
                     }
                     onMouseLeave={(e) =>
                       ((e.target as HTMLElement).style.color =
@@ -194,7 +194,7 @@ export default function Footer() {
                       transition: "color 0.2s",
                     }}
                     onMouseEnter={(e) =>
-                      ((e.target as HTMLElement).style.color = "#E8B4D0")
+                      ((e.target as HTMLElement).style.color = "#D4C4A8")
                     }
                     onMouseLeave={(e) =>
                       ((e.target as HTMLElement).style.color =
@@ -299,7 +299,7 @@ export default function Footer() {
                   transition: "color 0.2s",
                 }}
                 onMouseEnter={(e) =>
-                  ((e.target as HTMLElement).style.color = "#E8B4D0")
+                  ((e.target as HTMLElement).style.color = "#D4C4A8")
                 }
                 onMouseLeave={(e) =>
                   ((e.target as HTMLElement).style.color =

@@ -4,11 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================================
-   DD Talks — Feminine Bloom Design System
-   Palette: Deep plum darks ↔ Warm cream lights
-   Accents: Dusty rose #C084A8 · Powder blue #7EB8D4 · Soft lavender #A78BCA
+   DD Talks — Earthy Horizon Design System
+   Palette: Deep forest/moss darks ↔ Warm ivory/linen lights
+   Accents: Sky blue #7BA7BC · Warm tan #C4A882 · Sage green #8FB5A0
    Typography: Playfair Display (display) + DM Sans (body) + Great Vibes (calligraphy)
-   Sections alternate: dark (deep plum) ↔ light (warm cream)
+   Sections alternate: dark (deep forest) ↔ light (warm ivory)
    ============================================================ */
 
 @theme inline {
@@ -53,59 +53,59 @@
 :root {
   --radius: 0.75rem;
 
-  /* ── DD Talks Feminine Bloom Brand Colors ── */
+  /* ── DD Talks Earthy Horizon Brand Colors ── */
   /* Darks */
-  --dd-plum:        #1A0F2E;   /* deep midnight plum — replaces harsh black */
-  --dd-plum-2:      #221540;   /* slightly lighter plum */
-  --dd-plum-3:      #2E1D52;   /* medium plum for cards */
+  --dd-plum:        #1E2E20;   /* deep forest green — main dark sections */
+  --dd-plum-2:      #243527;   /* slightly lighter forest */
+  --dd-plum-3:      #2E4232;   /* medium forest for cards */
   /* Lights */
-  --dd-cream:       #FAF7F5;   /* warm cream white */
-  --dd-cream-2:     #F3EEF8;   /* lavender-tinted cream */
-  --dd-cream-3:     #EDE6F5;   /* soft lilac cream */
+  --dd-cream:       #F5F0E8;   /* warm ivory/linen */
+  --dd-cream-2:     #EEE8DA;   /* slightly deeper linen */
+  --dd-cream-3:     #E8E0CE;   /* warm sand */
   /* Accents */
-  --dd-rose:        #C084A8;   /* dusty rose — primary accent */
-  --dd-rose-dark:   #A8628A;   /* deeper rose for hover */
-  --dd-lavender:    #A78BCA;   /* soft lavender — secondary accent */
-  --dd-blue:        #7EB8D4;   /* powder blue — tertiary accent */
-  --dd-blush:       #E8B4D0;   /* light blush pink */
-  --dd-mauve:       #9B6B8A;   /* muted mauve for muted text */
+  --dd-rose:        #7BA7BC;   /* soft sky blue — primary accent */
+  --dd-rose-dark:   #5A8A9F;   /* deeper sky blue for hover */
+  --dd-lavender:    #8FB5A0;   /* sage green — secondary accent */
+  --dd-blue:        #C4A882;   /* warm tan/camel — tertiary accent */
+  --dd-blush:       #D4C4A8;   /* light tan/wheat */
+  --dd-mauve:       #7A9E8A;   /* muted sage for muted text */
   /* Neutrals */
   --dd-white:       #FFFFFF;
-  --dd-soft-gray:   #8B7D8E;   /* muted purple-gray */
+  --dd-soft-gray:   #8A9E8C;   /* muted sage-gray */
 
-  /* Semantic tokens — dark base (plum) */
-  --background: oklch(0.12 0.04 300);   /* deep plum */
-  --foreground: oklch(0.97 0.01 320);   /* near-white with warm tint */
-  --card: oklch(0.16 0.05 300);
-  --card-foreground: oklch(0.97 0.01 320);
-  --popover: oklch(0.16 0.05 300);
-  --popover-foreground: oklch(0.97 0.01 320);
-  --primary: oklch(0.65 0.12 330);      /* dusty rose */
-  --primary-foreground: oklch(0.12 0.04 300);
-  --secondary: oklch(0.20 0.05 300);
-  --secondary-foreground: oklch(0.85 0.02 320);
-  --muted: oklch(0.19 0.04 300);
-  --muted-foreground: oklch(0.60 0.06 320);
-  --accent: oklch(0.65 0.12 330);
-  --accent-foreground: oklch(0.12 0.04 300);
+  /* Semantic tokens — dark base (forest green) */
+  --background: oklch(0.18 0.03 150);   /* deep forest */
+  --foreground: oklch(0.96 0.02 80);    /* warm ivory */
+  --card: oklch(0.22 0.03 150);
+  --card-foreground: oklch(0.96 0.02 80);
+  --popover: oklch(0.22 0.03 150);
+  --popover-foreground: oklch(0.96 0.02 80);
+  --primary: oklch(0.62 0.07 210);      /* sky blue */
+  --primary-foreground: oklch(0.18 0.03 150);
+  --secondary: oklch(0.25 0.03 150);
+  --secondary-foreground: oklch(0.85 0.03 80);
+  --muted: oklch(0.23 0.03 150);
+  --muted-foreground: oklch(0.62 0.04 150);
+  --accent: oklch(0.62 0.07 210);
+  --accent-foreground: oklch(0.18 0.03 150);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.65 0.12 330);
-  --chart-1: oklch(0.65 0.12 330);
-  --chart-2: oklch(0.62 0.14 280);
-  --chart-3: oklch(0.68 0.10 220);
-  --chart-4: oklch(0.55 0.10 310);
-  --chart-5: oklch(0.75 0.08 340);
-  --sidebar: oklch(0.16 0.05 300);
-  --sidebar-foreground: oklch(0.97 0.01 320);
-  --sidebar-primary: oklch(0.65 0.12 330);
-  --sidebar-primary-foreground: oklch(0.12 0.04 300);
-  --sidebar-accent: oklch(0.20 0.05 300);
-  --sidebar-accent-foreground: oklch(0.85 0.02 320);
+  --ring: oklch(0.62 0.07 210);
+  --chart-1: oklch(0.62 0.07 210);
+  --chart-2: oklch(0.65 0.08 155);
+  --chart-3: oklch(0.70 0.07 80);
+  --chart-4: oklch(0.55 0.06 180);
+  --chart-5: oklch(0.75 0.05 100);
+  --sidebar: oklch(0.22 0.03 150);
+  --sidebar-foreground: oklch(0.96 0.02 80);
+  --sidebar-primary: oklch(0.62 0.07 210);
+  --sidebar-primary-foreground: oklch(0.18 0.03 150);
+  --sidebar-accent: oklch(0.25 0.03 150);
+  --sidebar-accent-foreground: oklch(0.85 0.03 80);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.65 0.12 330);
+  --sidebar-ring: oklch(0.62 0.07 210);
 }
 
 @layer base {
@@ -168,25 +168,25 @@
     }
   }
 
-  /* ── DD Talks Feminine Bloom Custom Components ── */
+  /* ── DD Talks Earthy Horizon Custom Components ── */
 
   /* ── ALTERNATING SECTION SYSTEM ── */
-  /* Dark section: deep plum background, light text */
+  /* Dark section: deep forest background, light text */
   .dd-section-dark {
     background-color: var(--dd-plum);
     color: var(--dd-white);
   }
-  /* Medium dark section: slightly lighter plum */
+  /* Medium dark section: slightly lighter forest */
   .dd-section-mid {
     background-color: var(--dd-plum-2);
     color: var(--dd-white);
   }
-  /* Light section: warm cream background, dark text */
+  /* Light section: warm ivory background, dark text */
   .dd-section-light {
     background-color: var(--dd-cream);
     color: var(--dd-plum);
   }
-  /* Lavender-tinted light section */
+  /* Sand-tinted light section */
   .dd-section-blush {
     background-color: var(--dd-cream-2);
     color: var(--dd-plum);
@@ -197,7 +197,7 @@
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(192, 132, 168, 0.25);
+    border: 1px solid rgba(123, 167, 188, 0.25);
     border-radius: 16px;
   }
 
@@ -206,22 +206,22 @@
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(167, 139, 202, 0.30);
+    border: 1px solid rgba(143, 181, 160, 0.30);
     border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(192, 132, 168, 0.12);
+    box-shadow: 0 4px 24px rgba(123, 167, 188, 0.12);
   }
 
   .dd-glass-dark {
-    background: rgba(26, 15, 46, 0.85);
+    background: rgba(30, 46, 32, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(192, 132, 168, 0.20);
+    border: 1px solid rgba(123, 167, 188, 0.20);
     border-radius: 16px;
   }
 
-  /* Primary button — dusty rose gradient */
+  /* Primary button — sky blue gradient */
   .dd-btn-primary {
-    background: linear-gradient(135deg, #C084A8, #A8628A);
+    background: linear-gradient(135deg, #7BA7BC, #5A8A9F);
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
@@ -231,14 +231,14 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: 0 4px 20px rgba(192, 132, 168, 0.35);
+    box-shadow: 0 4px 20px rgba(123, 167, 188, 0.35);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
   .dd-btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(192, 132, 168, 0.50);
-    background: linear-gradient(135deg, #D09ABE, #C084A8);
+    box-shadow: 0 8px 32px rgba(123, 167, 188, 0.50);
+    background: linear-gradient(135deg, #8DBDD0, #7BA7BC);
   }
   .dd-btn-primary:active {
     transform: scale(0.97);
@@ -246,7 +246,7 @@
 
   /* Primary button — on light backgrounds */
   .dd-btn-primary-dark {
-    background: linear-gradient(135deg, #A8628A, #7B4A6B);
+    background: linear-gradient(135deg, #5A8A9F, #3D6E82);
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
@@ -256,13 +256,13 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: 0 4px 20px rgba(168, 98, 138, 0.30);
+    box-shadow: 0 4px 20px rgba(90, 138, 159, 0.30);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
   .dd-btn-primary-dark:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(168, 98, 138, 0.45);
+    box-shadow: 0 8px 32px rgba(90, 138, 159, 0.45);
   }
   .dd-btn-primary-dark:active {
     transform: scale(0.97);
@@ -271,49 +271,49 @@
   /* Ghost button — on dark backgrounds */
   .dd-btn-ghost {
     background: transparent;
-    color: #C084A8;
+    color: #7BA7BC;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     padding: 0.75rem 2rem;
     border-radius: 50px;
-    border: 1px solid rgba(192, 132, 168, 0.55);
+    border: 1px solid rgba(123, 167, 188, 0.55);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
   .dd-btn-ghost:hover {
-    border-color: #C084A8;
-    background: rgba(192, 132, 168, 0.10);
-    box-shadow: 0 0 20px rgba(192, 132, 168, 0.20);
+    border-color: #7BA7BC;
+    background: rgba(123, 167, 188, 0.10);
+    box-shadow: 0 0 20px rgba(123, 167, 188, 0.20);
   }
 
   /* Ghost button — on light backgrounds */
   .dd-btn-ghost-light {
     background: transparent;
-    color: #A8628A;
+    color: #5A8A9F;
     font-family: 'DM Sans', sans-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     padding: 0.75rem 2rem;
     border-radius: 50px;
-    border: 1.5px solid rgba(168, 98, 138, 0.55);
+    border: 1.5px solid rgba(90, 138, 159, 0.55);
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
     text-transform: uppercase;
     font-size: 0.8rem;
   }
   .dd-btn-ghost-light:hover {
-    border-color: #A8628A;
-    background: rgba(168, 98, 138, 0.08);
-    box-shadow: 0 0 20px rgba(168, 98, 138, 0.15);
+    border-color: #5A8A9F;
+    background: rgba(90, 138, 159, 0.08);
+    box-shadow: 0 0 20px rgba(90, 138, 159, 0.15);
   }
 
-  /* Accent rule — rose gradient */
+  /* Accent rule — earthy gradient */
   .dd-rule {
     height: 2px;
-    background: linear-gradient(90deg, transparent, #C084A8, #A78BCA, transparent);
+    background: linear-gradient(90deg, transparent, #7BA7BC, #8FB5A0, transparent);
     border: none;
     margin: 0;
   }
@@ -325,7 +325,7 @@
     font-weight: 600;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: #C084A8;
+    color: #7BA7BC;
   }
 
   /* Label on light backgrounds */
@@ -335,61 +335,61 @@
     font-weight: 600;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: #A8628A;
+    color: #5A8A9F;
   }
 
-  /* Accent text — replaces orange glow */
+  /* Accent text */
   .dd-glow-text {
-    color: #C084A8;
-    text-shadow: 0 0 30px rgba(192, 132, 168, 0.50);
+    color: #7BA7BC;
+    text-shadow: 0 0 30px rgba(123, 167, 188, 0.50);
   }
 
   /* Accent text on light backgrounds */
   .dd-accent-text {
-    color: #A8628A;
+    color: #5A8A9F;
   }
 
   /* Episode card — on dark backgrounds */
   .dd-episode-card {
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(192, 132, 168, 0.15);
+    border: 1px solid rgba(123, 167, 188, 0.15);
     border-radius: 14px;
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .dd-episode-card:hover {
-    border-color: rgba(192, 132, 168, 0.45);
-    background: rgba(192, 132, 168, 0.06);
+    border-color: rgba(123, 167, 188, 0.45);
+    background: rgba(123, 167, 188, 0.06);
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(192, 132, 168, 0.14);
+    box-shadow: 0 8px 30px rgba(123, 167, 188, 0.14);
   }
 
   /* Episode card — on light backgrounds */
   .dd-episode-card-light {
     background: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(167, 139, 202, 0.25);
+    border: 1px solid rgba(143, 181, 160, 0.25);
     border-radius: 14px;
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: 0 2px 12px rgba(192, 132, 168, 0.08);
+    box-shadow: 0 2px 12px rgba(123, 167, 188, 0.08);
   }
   .dd-episode-card-light:hover {
-    border-color: rgba(192, 132, 168, 0.50);
+    border-color: rgba(123, 167, 188, 0.50);
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(192, 132, 168, 0.18);
+    box-shadow: 0 8px 30px rgba(123, 167, 188, 0.18);
   }
 
   /* Audience card */
   .dd-audience-card {
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(192, 132, 168, 0.18);
+    border: 1px solid rgba(123, 167, 188, 0.18);
     border-radius: 16px;
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     cursor: pointer;
   }
   .dd-audience-card:hover {
-    border-color: #C084A8;
-    background: rgba(192, 132, 168, 0.08);
+    border-color: #7BA7BC;
+    background: rgba(123, 167, 188, 0.08);
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(192, 132, 168, 0.18);
+    box-shadow: 0 12px 40px rgba(123, 167, 188, 0.18);
   }
 
   /* Nav link */
@@ -404,16 +404,16 @@
     text-decoration: none;
   }
   .dd-nav-link:hover {
-    color: #E8B4D0;
+    color: #D4C4A8;
   }
   .dd-nav-link.active {
-    color: #C084A8;
+    color: #7BA7BC;
   }
 
   /* Form input — on dark backgrounds */
   .dd-input {
     background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(192, 132, 168, 0.25);
+    border: 1px solid rgba(123, 167, 188, 0.25);
     border-radius: 10px;
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
@@ -423,8 +423,8 @@
     outline: none;
   }
   .dd-input:focus {
-    border-color: #C084A8;
-    box-shadow: 0 0 0 3px rgba(192, 132, 168, 0.15);
+    border-color: #7BA7BC;
+    box-shadow: 0 0 0 3px rgba(123, 167, 188, 0.15);
   }
   .dd-input::placeholder {
     color: rgba(255, 255, 255, 0.30);
@@ -433,7 +433,7 @@
   /* Form input — on light backgrounds */
   .dd-input-light {
     background: rgba(255, 255, 255, 0.90);
-    border: 1.5px solid rgba(167, 139, 202, 0.35);
+    border: 1.5px solid rgba(143, 181, 160, 0.35);
     border-radius: 10px;
     color: var(--dd-plum);
     font-family: 'DM Sans', sans-serif;
@@ -443,24 +443,24 @@
     outline: none;
   }
   .dd-input-light:focus {
-    border-color: #A78BCA;
-    box-shadow: 0 0 0 3px rgba(167, 139, 202, 0.15);
+    border-color: #8FB5A0;
+    box-shadow: 0 0 0 3px rgba(143, 181, 160, 0.15);
   }
   .dd-input-light::placeholder {
-    color: rgba(26, 15, 46, 0.35);
+    color: rgba(30, 46, 32, 0.35);
   }
 
   /* Pillar icon box */
   .dd-pillar-icon {
     width: 48px;
     height: 48px;
-    background: rgba(192, 132, 168, 0.14);
-    border: 1px solid rgba(192, 132, 168, 0.30);
+    background: rgba(123, 167, 188, 0.14);
+    border: 1px solid rgba(123, 167, 188, 0.30);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #C084A8;
+    color: #7BA7BC;
     flex-shrink: 0;
   }
 
@@ -468,13 +468,13 @@
   .dd-pillar-icon-light {
     width: 48px;
     height: 48px;
-    background: rgba(167, 139, 202, 0.15);
-    border: 1px solid rgba(167, 139, 202, 0.35);
+    background: rgba(143, 181, 160, 0.15);
+    border: 1px solid rgba(143, 181, 160, 0.35);
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #7B4A6B;
+    color: #3D6E82;
     flex-shrink: 0;
   }
 
@@ -491,15 +491,15 @@
   }
 
   .dd-fade-in {
-    animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInUp 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
 
   /* Badge — on dark backgrounds */
   .dd-badge {
     display: inline-block;
-    background: rgba(192, 132, 168, 0.15);
-    border: 1px solid rgba(192, 132, 168, 0.40);
-    color: #E8B4D0;
+    background: rgba(123, 167, 188, 0.15);
+    border: 1px solid rgba(123, 167, 188, 0.40);
+    color: #D4C4A8;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.65rem;
     font-weight: 600;
@@ -512,9 +512,9 @@
   /* Badge — on light backgrounds */
   .dd-badge-light {
     display: inline-block;
-    background: rgba(167, 139, 202, 0.15);
-    border: 1px solid rgba(167, 139, 202, 0.40);
-    color: #7B4A6B;
+    background: rgba(143, 181, 160, 0.15);
+    border: 1px solid rgba(143, 181, 160, 0.40);
+    color: #3D6E82;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.65rem;
     font-weight: 600;
@@ -541,9 +541,9 @@
     transition: all 0.2s ease;
   }
   .dd-platform-btn:hover {
-    border-color: rgba(192, 132, 168, 0.50);
-    color: #E8B4D0;
-    background: rgba(192, 132, 168, 0.08);
+    border-color: rgba(123, 167, 188, 0.50);
+    color: #D4C4A8;
+    background: rgba(123, 167, 188, 0.08);
   }
 
   /* Ticker tape */
@@ -557,10 +557,10 @@
     font-family: 'Great Vibes', cursive;
   }
 
-  /* Decorative floral divider */
+  /* Decorative earthy divider */
   .dd-floral-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(192, 132, 168, 0.40), rgba(167, 139, 202, 0.40), transparent);
+    background: linear-gradient(90deg, transparent, rgba(123, 167, 188, 0.40), rgba(143, 181, 160, 0.40), transparent);
     position: relative;
   }
   .dd-floral-divider::after {
@@ -569,7 +569,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #C084A8;
+    color: #7BA7BC;
     font-size: 0.7rem;
     background: var(--dd-plum);
     padding: 0 0.5rem;
@@ -582,9 +582,9 @@
   .dd-hero-overlay {
     background: linear-gradient(
       to bottom,
-      rgba(26, 15, 46, 0.55) 0%,
-      rgba(26, 15, 46, 0.35) 40%,
-      rgba(26, 15, 46, 0.70) 100%
+      rgba(30, 46, 32, 0.55) 0%,
+      rgba(30, 46, 32, 0.35) 40%,
+      rgba(30, 46, 32, 0.70) 100%
     );
   }
 }

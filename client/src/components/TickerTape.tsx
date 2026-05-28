@@ -1,5 +1,5 @@
 // DD Talks — TickerTape Component
-// Feminine Bloom theme: deep plum bar, dusty rose highlights, blush dots
+// Earthy Horizon theme: deep forest bar, sky blue highlights, tan dots
 
 import { Link } from "wouter";
 import { APPLE_PODCASTS_URL, SPOTIFY_URL } from "@/lib/data";
@@ -54,7 +54,7 @@ function renderItem(item: typeof ITEMS[0], key: string) {
         fontSize: "0.70rem",
         letterSpacing: item.highlight ? "0.14em" : "0.05em",
         textTransform: item.highlight ? "uppercase" : "none",
-        color: item.highlight ? "#E8B4D0" : "rgba(255,255,255,0.70)",
+        color: item.highlight ? "#D4C4A8" : "rgba(255,255,255,0.70)",
         whiteSpace: "nowrap",
         display: "inline-block",
       }}
@@ -93,8 +93,8 @@ export default function TickerTape() {
       className="fixed top-0 left-0 right-0 z-[60]"
       style={{
         height: "36px",
-        background: "linear-gradient(90deg, #1A0F2E 0%, #221540 50%, #1A0F2E 100%)",
-        borderBottom: "1px solid rgba(192,132,168,0.22)",
+        background: "linear-gradient(90deg, #1E2E20 0%, #243527 50%, #1E2E20 100%)",
+        borderBottom: "1px solid rgba(123, 167, 188,0.22)",
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
@@ -108,7 +108,7 @@ export default function TickerTape() {
           top: 0,
           bottom: 0,
           width: "60px",
-          background: "linear-gradient(to right, #1A0F2E 0%, transparent 100%)",
+          background: "linear-gradient(to right, #1E2E20 0%, transparent 100%)",
           zIndex: 2,
           pointerEvents: "none",
         }}
@@ -138,7 +138,7 @@ export default function TickerTape() {
           top: 0,
           bottom: 0,
           width: "60px",
-          background: "linear-gradient(to left, #1A0F2E 0%, transparent 100%)",
+          background: "linear-gradient(to left, #1E2E20 0%, transparent 100%)",
           zIndex: 2,
           pointerEvents: "none",
         }}
@@ -150,7 +150,7 @@ export default function TickerTape() {
           100% { transform: translateX(-50%); }
         }
         .ticker-link:hover span {
-          color: #C084A8 !important;
+          color: #7BA7BC !important;
         }
         @media (prefers-reduced-motion: reduce) {
           .ticker-track { animation: none !important; }

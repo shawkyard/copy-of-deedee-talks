@@ -1,6 +1,6 @@
 /**
  * SectionDivider — Cute feminine SVG wave/petal separators
- * Design: Soft rose, lavender, cream waves that flow between sections
+ * Design: Soft sky blue, sage green, ivory waves that flow between sections
  * Variants: wave (default), petal, ripple
  */
 
@@ -15,7 +15,7 @@ interface SectionDividerProps {
 }
 
 export default function SectionDivider({
-  fill = "#FAF7F5",
+  fill = "#F5F0E8",
   flip = false,
   variant = "wave",
   className = "",

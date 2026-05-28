@@ -21,18 +21,18 @@ export default function Contact() {
   ];
 
   return (
-    <div style={{ background: "#1A0F2E", minHeight: "100vh" }}>
+    <div style={{ background: "#1E2E20", minHeight: "100vh" }}>
       <Navbar />
 
       {/* Hero */}
-      <section style={{ background: "#FAF7F5", padding: "7rem 0 4rem", paddingTop: "7rem" }}>
+      <section style={{ background: "#F5F0E8", padding: "7rem 0 4rem", paddingTop: "7rem" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <p className="dd-label-dark mb-4">Contact</p>
-            <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 4rem)", color: "#1A0F2E", lineHeight: 1.1, marginBottom: "1rem" }}>
-              Start the <span style={{ color: "#A8628A", fontStyle: "italic" }}>Conversation</span>
+            <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: "clamp(2.2rem, 5vw, 4rem)", color: "#1E2E20", lineHeight: 1.1, marginBottom: "1rem" }}>
+              Start the <span style={{ color: "#5A8A9F", fontStyle: "italic" }}>Conversation</span>
             </h1>
-            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", color: "rgba(26,15,46,0.65)", maxWidth: "520px", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1rem", color: "rgba(30, 46, 32,0.65)", maxWidth: "520px", lineHeight: 1.7 }}>
               Choose the pathway that fits your purpose. All messages are personally reviewed by Denise. No phone numbers, email addresses, or office addresses are shared through this platform.
             </p>
           </motion.div>
@@ -40,7 +40,7 @@ export default function Contact() {
       </section>
 
       {/* Form */}
-      <section style={{ background: "#1A0F2E", padding: "3rem 0 6rem" }}>
+      <section style={{ background: "#1E2E20", padding: "3rem 0 6rem" }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Tabs */}
           <div className="flex flex-col sm:flex-row gap-3 mb-8">
@@ -50,12 +50,12 @@ export default function Contact() {
                 onClick={() => { setActiveForm(t.id); setSubmitted(false); setForm({ name: "", subject: "", message: "", eventType: "", format: "In-Person", response: "No Response Needed" }); }}
                 className="flex-1 p-4 text-left rounded-xl transition-all duration-200"
                 style={{
-                  background: activeForm === t.id ? "rgba(192,132,168,0.10)" : "rgba(255,255,255,0.03)",
-                  border: `1px solid ${activeForm === t.id ? "#C084A8" : "rgba(192,132,168,0.15)"}`,
+                  background: activeForm === t.id ? "rgba(123, 167, 188,0.10)" : "rgba(255,255,255,0.03)",
+                  border: `1px solid ${activeForm === t.id ? "#7BA7BC" : "rgba(123, 167, 188,0.15)"}`,
                   cursor: "pointer",
                 }}
               >
-                <p style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: "0.82rem", color: activeForm === t.id ? "#C084A8" : "#ffffff", marginBottom: "0.25rem" }}>{t.label}</p>
+                <p style={{ fontFamily: "'DM Sans', sans-serif", fontWeight: 600, fontSize: "0.82rem", color: activeForm === t.id ? "#7BA7BC" : "#ffffff", marginBottom: "0.25rem" }}>{t.label}</p>
                 <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "0.72rem", color: "rgba(255,255,255,0.45)", lineHeight: 1.4 }}>{t.desc}</p>
               </button>
             ))}
@@ -103,7 +103,7 @@ export default function Contact() {
                       <div className="flex flex-wrap gap-3">
                         {["In-Person", "Virtual", "Hybrid"].map((f) => (
                           <label key={f} style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer", fontFamily: "'DM Sans', sans-serif", fontSize: "0.82rem", color: "rgba(255,255,255,0.70)" }}>
-                            <input type="radio" name="format" value={f} checked={form.format === f} onChange={() => setForm({ ...form, format: f })} style={{ accentColor: "#C084A8" }} />
+                            <input type="radio" name="format" value={f} checked={form.format === f} onChange={() => setForm({ ...form, format: f })} style={{ accentColor: "#7BA7BC" }} />
                             {f}
                           </label>
                         ))}

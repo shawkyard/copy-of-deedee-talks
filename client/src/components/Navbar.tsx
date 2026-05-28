@@ -52,12 +52,12 @@ export default function Navbar() {
         style={{
           top: "36px",
           background: scrolled
-            ? "rgba(26,15,46,0.97)"
-            : "rgba(26,15,46,0.75)",
+            ? "rgba(30, 46, 32,0.97)"
+            : "rgba(30, 46, 32,0.75)",
           backdropFilter: "blur(16px)",
           WebkitBackdropFilter: "blur(16px)",
           borderBottom: scrolled
-            ? "1px solid rgba(192,132,168,0.22)"
+            ? "1px solid rgba(123, 167, 188,0.22)"
             : "1px solid transparent",
         }}
       >
@@ -78,7 +78,7 @@ export default function Navbar() {
                       fontSize: "1.65rem",
                       color: "#ffffff",
                       lineHeight: 1,
-                      textShadow: "0 0 18px rgba(192,132,168,0.35)",
+                      textShadow: "0 0 18px rgba(123, 167, 188,0.35)",
                     }}
                   >
                     DD
@@ -88,7 +88,7 @@ export default function Navbar() {
                       fontFamily: "'DM Sans', sans-serif",
                       fontWeight: 600,
                       fontSize: "0.82rem",
-                      color: "#E8B4D0",
+                      color: "#D4C4A8",
                       letterSpacing: "0.18em",
                       textTransform: "uppercase",
                       marginLeft: "0.15em",
@@ -122,7 +122,7 @@ export default function Navbar() {
                   style={{
                     color:
                       location === link.href
-                        ? "#C084A8"
+                        ? "#7BA7BC"
                         : "rgba(255,255,255,0.70)",
                   }}
                 >
@@ -138,7 +138,7 @@ export default function Navbar() {
               >
                 <button
                   className="dd-nav-link flex items-center gap-1"
-                  style={{ color: audienceOpen ? "#C084A8" : "rgba(255,255,255,0.70)" }}
+                  style={{ color: audienceOpen ? "#7BA7BC" : "rgba(255,255,255,0.70)" }}
                   onClick={() => setAudienceOpen(!audienceOpen)}
                 >
                   For You
@@ -168,10 +168,10 @@ export default function Navbar() {
                   className="absolute right-0 w-52 py-2 rounded-2xl"
                   style={{
                     top: "calc(100% + 8px)",
-                    background: "rgba(26,15,46,0.98)",
-                    border: "1px solid rgba(192,132,168,0.28)",
+                    background: "rgba(30, 46, 32,0.98)",
+                    border: "1px solid rgba(123, 167, 188,0.28)",
                     backdropFilter: "blur(16px)",
-                    boxShadow: "0 8px 32px rgba(26,15,46,0.60)",
+                    boxShadow: "0 8px 32px rgba(30, 46, 32,0.60)",
                     opacity: audienceOpen ? 1 : 0,
                     pointerEvents: audienceOpen ? "auto" : "none",
                     transform: audienceOpen ? "translateY(0)" : "translateY(-6px)",
@@ -191,8 +191,8 @@ export default function Navbar() {
                       }}
                       onMouseEnter={(e) => {
                         const el = e.currentTarget as HTMLElement;
-                        el.style.color = "#E8B4D0";
-                        el.style.background = "rgba(192,132,168,0.09)";
+                        el.style.color = "#D4C4A8";
+                        el.style.background = "rgba(123, 167, 188,0.09)";
                       }}
                       onMouseLeave={(e) => {
                         const el = e.currentTarget as HTMLElement;
@@ -232,8 +232,8 @@ export default function Navbar() {
           <div
             className="lg:hidden"
             style={{
-              background: "rgba(26,15,46,0.98)",
-              borderTop: "1px solid rgba(192,132,168,0.18)",
+              background: "rgba(30, 46, 32,0.98)",
+              borderTop: "1px solid rgba(123, 167, 188,0.18)",
             }}
           >
             <div className="px-4 py-4 space-y-1">
@@ -246,7 +246,7 @@ export default function Navbar() {
                     fontFamily: "'DM Sans', sans-serif",
                     color:
                       location === link.href
-                        ? "#C084A8"
+                        ? "#7BA7BC"
                         : "rgba(255,255,255,0.75)",
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
@@ -259,7 +259,7 @@ export default function Navbar() {
               ))}
               <div
                 style={{
-                  borderTop: "1px solid rgba(192,132,168,0.15)",
+                  borderTop: "1px solid rgba(123, 167, 188,0.15)",
                   paddingTop: "0.75rem",
                   marginTop: "0.75rem",
                 }}
@@ -270,7 +270,7 @@ export default function Navbar() {
                     fontSize: "0.65rem",
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
-                    color: "#C084A8",
+                    color: "#7BA7BC",
                     marginBottom: "0.5rem",
                   }}
                 >
